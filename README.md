@@ -105,25 +105,25 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 <div align="center">
 
-<!-- STATS CARD -->
+<!-- STATS CARD CON BORDE NEON -->
 <a href="https://github.com/Charles-X-Core">
-<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d0d0d&title_color=ff4444&icon_color=ff6b35&text_color=ffffff&ring_color=ffa500" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&hide_border=false&count_private=true&include_all_commits=true&bg_color=0a0a0f&title_color=ff4444&icon_color=ff6b35&text_color=ffffff&border_color=ff4444&ring_color=ffa500" width="48%" />
 </a>
 
-<!-- STREAK STATS -->
+<!-- STREAK CON FUEGO -->
 <a href="https://github.com/Charles-X-Core">
-<img src="https://streak-stats.demolab.com?user=Charles-X-Core&theme=radical&hide_border=true&background=0d0d0d&ring=ff4444&fire=ff6b35&currStreakLabel=ffa500&sideLabels=ffffff&dates=ffffff" width="49%" />
+<img src="https://streak-stats.demolab.com?user=Charles-X-Core&theme=radical&hide_border=false&background=0a0a0f&ring=ff4444&fire=ff6b35&currStreakLabel=ffa500&sideLabels=ffffff&dates=ffffff&border=ff4444" width="48%" />
 </a>
 
 </div>
 
 <br/>
 
-<!-- TOP LANGUAGES -->
+<!-- TOP LANGUAGES CON DONUT -->
 <div align="center">
 
 <a href="https://github.com/Charles-X-Core">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=radical&hide_border=true&bg_color=0d0d0d&title_color=ff4444&text_color=ffffff&langs_count=8" width="50%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=radical&hide_border=false&bg_color=0a0a0f&title_color=ff4444&text_color=ffffff&border_color=ff4444&langs_count=8" width="50%" />
 </a>
 
 </div>
@@ -136,8 +136,52 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 <div align="center">
 
+<!-- LOGROS CUSTOM CON SHIELDS.IO -->
 <a href="https://github.com/Charles-X-Core">
-<img src="https://github-profile-trophy.vercel.app/?username=Charles-X-Core&theme=radical&no-frame=true&no-bg=false&column=7&margin-w=15" width="100%" />
+<img src="https://img.shields.io/badge/⚡-Repositorios%2030+-FF4444?style=for-the-badge&logo=github&logoColor=white" alt="Repos"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🔥-Commits%20Activos-FF6B35?style=for-the-badge&logo=git&logoColor=white" alt="Commits"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🤖-AI%20%26%20Automation-FFA500?style=for-the-badge&logo=robot&logoColor=white" alt="AI"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🛡️-Security%20Researcher-FF4444?style=for-the-badge&logo=security&logoColor=white" alt="Security"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/☁️-Azure%20Cloud-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🌐-Full%20Stack-FF6B35?style=for-the-badge&logo=react&logoColor=white" alt="FullStack"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/📱-Mobile%20Dev-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Mobile"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🔧-IoT%20Hacker-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="IoT"/>
+</a>
+
+<br/><br/>
+
+<!-- STAT Badges animados -->
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/💰-Stars-gold?style=flat-square&logo=github" alt="Stars"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🍴-Forks-blue?style=flat-square&logo=github" alt="Forks"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/👁️-Watchers-gray?style=flat-square&logo=github" alt="Watchers"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/📦-30%20Repos-brightgreen?style=flat-square&logo=github" alt="Repos"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/💻-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+</a>
+<a href="https://github.com/Charles-X-Core">
+<img src="https://img.shields.io/badge/🐍-Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python"/>
 </a>
 
 </div>

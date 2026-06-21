@@ -1,10 +1,12 @@
 <div align="center">
 
-<!-- HEADER ANIMADO -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF4444&center=true&vCenter=true&width=600&lines=CHARLES-X+%7C+Developer;AI+%26+Automation+Specialist;Network+Security+Engineer;Full+Stack+Creator;Cyberpunk+Coder+%F0%9F%94%A5&duration=2000" alt="Typing SVG" />
+<!-- NOMBRE GRANDE CON MAS ESPACIO -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,25:ff4444,50:ff6b35,75:ffa500,100:0d0d0d&height=180&section=header&text=CHARLES-X&fontSize=90&fontColor=ffffff&animation=fadeIn&fontAlignY=45" width="100%" />
 
-<!-- LINEA DE FUEGO -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,25:ff4444,50:ff6b35,75:ffa500,100:0d0d0d&height=120&section=header&text=CHARLES-X&fontSize=80&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Developer%20%7C%20AI%20%7C%20Security&descSize=18&descAlign=50&descAlignY=55" width="100%" />
+<br/><br/>
+
+<!-- SUBTITULO ANIMADO -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF6B35&center=true&vCenter=true&width=600&lines=Developer+%7C+AI+%26+Automation+%7C+Security;Full+Stack+Creator;Cyberpunk+Coder+%F0%9F%94%A5&duration=2000" alt="Typing SVG" />
 
 </div>
 
@@ -103,14 +105,26 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=megazero&bg_color=0d0d0d&title_color=FF4444&icon_color=FF6B35&text_color=FFFFFF&border_color=FF4444&hide_border=true&count_private=true&include_all_commits=true" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Charles-X-Core&theme=megazero&background=0d0d0d&ring=FF4444&fire=FF6B35&currStreakLabel=FFA500&sideLabels=FFFFFF" width="48%" />
+<!-- STATS CARD -->
+<a href="https://github.com/Charles-X-Core">
+<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true&bg_color=0d0d0d&title_color=ff4444&icon_color=ff6b35&text_color=ffffff&ring_color=ffa500" width="49%" />
+</a>
+
+<!-- STREAK STATS -->
+<a href="https://github.com/Charles-X-Core">
+<img src="https://streak-stats.demolab.com?user=Charles-X-Core&theme=radical&hide_border=true&background=0d0d0d&ring=ff4444&fire=ff6b35&currStreakLabel=ffa500&sideLabels=ffffff&dates=ffffff" width="49%" />
+</a>
 
 </div>
 
+<br/>
+
+<!-- TOP LANGUAGES -->
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=megazero&bg_color=0d0d0d&title_color=FF4444&text_color=FFFFFF&langs_count=8" width="50%" />
+<a href="https://github.com/Charles-X-Core">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=radical&hide_border=true&bg_color=0d0d0d&title_color=ff4444&text_color=ffffff&langs_count=8" width="50%" />
+</a>
 
 </div>
 
@@ -122,7 +136,9 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=Charles-X-Core&theme=megazero&bg_color=0d0d0d&row=1&column=7&margin-w=15&no-frame=true&no-bg=false" width="100%" />
+<a href="https://github.com/Charles-X-Core">
+<img src="https://github-profile-trophy.vercel.app/?username=Charles-X-Core&theme=radical&no-frame=true&no-bg=false&column=7&margin-w=15" width="100%" />
+</a>
 
 </div>
 
@@ -233,7 +249,9 @@ const CharlesX = {
 
 <div align="center">
 
-![Charles-X-Core's github activity](https://github-readme-activity-graph.vercel.app/graph?username=Charles-X-Core&bg_color=0d0d0d&color=ff4444&line=ff6b35&point=ffa500&area=true&area_color=ff4444&hide_border=true)
+<a href="https://github.com/Charles-X-Core">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Charles-X-Core&bg_color=0d0d0d&color=ff4444&line=ff6b35&point=ffa500&area=true&area_color=ff4444&hide_border=true" width="100%" />
+</a>
 
 </div>
 
@@ -248,11 +266,11 @@ const CharlesX = {
 
 <br/>
 
-![Profile Views](https://komarev.com/ghpvc/?username=Charles-X-Core&color=FF4444&style=for-the-badge&label=PROFILE+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=Charles-X-Core&color=ff4444&style=for-the-badge&label=PROFILE+VIEWS&label_color=0d0d0d)
 
 <br/>
 
-**Made with 🔥 and code by CHARLES-X****
+**Made with 🔥 and code by CHARLES-X**
 
 *"The only way to do great work is to love what you do." — Steve Jobs*
 

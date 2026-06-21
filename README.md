@@ -252,7 +252,7 @@ const CharlesX = {
 
 <br/>
 
-**Made with 🔥 and code by CHARLES-X**
+**Made with 🔥 and code by CHARLES-X****
 
 *"The only way to do great work is to love what you do." — Steve Jobs*
 

@@ -1,5 +1,4 @@
 <!-- AUTO-GENERATED - DO NOT EDIT MANUALLY -->
-<!-- Last updated: Jun 30, 2026 -->
 <div align="center">
 
 <!-- HEADER -->
@@ -14,7 +13,7 @@
 
 <br/>
 
-<!-- SOCIAL BADGES -->
+<!-- SOCIAL -->
 <div align="center">
 <a href="https://www.linkedin.com/in/carlos-alonso-picho-vargas-87738213b/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://capv-portfolio.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF4444?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
@@ -26,16 +25,15 @@
 
 ---
 
-<!-- ABOUT ME -->
+## About Me
+
 <table>
 <tr>
-<td width="50%" style="padding:20px;">
+<td width="50%">
 
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/smile.png" width="20" height="20"> Sobre Mi
+**Sobre Mi**
 
 Soy **Carlos Alonso Picho Vargas**, conocido como **CHARLES-X**. Desarrollador de software apasionado por la **inteligencia artificial**, la **automatizacion** y la **seguridad de redes**.
-
-Me encanta crear soluciones que combinan tecnologia de vanguardia con diseno innovador. Desde aplicaciones moviles hasta sistemas de automatizacion de redes con MCP, siempre busco superar los limites de lo posible.
 
 - Full Stack Developer
 - AI & Automation Enthusiast
@@ -43,13 +41,11 @@ Me encanta crear soluciones que combinan tecnologia de vanguardia con diseno inn
 - Cloud Computing (Azure)
 
 </td>
-<td width="50%" style="padding:20px;">
+<td width="50%">
 
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/globe.png" width="20" height="20"> About Me
+**About Me**
 
 I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer passionate about **artificial intelligence**, **automation**, and **network security**.
-
-I love creating solutions that combine cutting-edge technology with innovative design. From mobile apps to MCP network automation systems, I always push the boundaries of what's possible.
 
 - Full Stack Developer
 - AI & Automation Enthusiast
@@ -64,10 +60,9 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 ---
 
-<!-- TECH STACK -->
-<div align="center">
+## Tech Stack
 
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/wrench.png" width="20" height="20"> Tech Stack
+<div align="center">
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -77,14 +72,10 @@ I love creating solutions that combine cutting-edge technology with innovative d
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-<br/>
-
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-
-<br/>
 
 ![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
@@ -99,74 +90,42 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 ---
 
-<!-- STATS -->
+## GitHub Stats
+
 <div align="center">
-
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/chart.png" width="20" height="20"> GitHub Stats
-
 <a href="https://github.com/Charles-X-Core">
-<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&hide_border=false&count_private=true&include_all_commits=true&bg_color=0a0a0f&title_color=ff4444&icon_color=ff6b35&text_color=ffffff&border_color=ff4444&ring_color=ffa500" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&hide_border=false&count_private=true&include_all_commits=true&bg_color=0a0a0f&title_color=ff4444&icon_color=ff6b35&text_color=ffffff&border_color=ff4444" width="48%" />
 </a>
 <a href="https://github.com/Charles-X-Core">
-<img src="https://streak-stats.demolab.com?user=Charles-X-Core&theme=radical&hide_border=false&background=0a0a0f&ring=ff4444&fire=ff6b35&currStreakLabel=ffa500&sideLabels=ffffff&dates=ffffff&border=ff4444" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Charles-X-Core&theme=radical&hide_border=false&background=0a0a0f&ring=ff4444&fire=ff6b35&currStreakLabel=ffa500&sideLabels=ffffff&dates=ffffff&border=ff4444" width="48%" />
 </a>
+</div>
 
+<div align="center">
+<a href="https://github.com/Charles-X-Core">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=radical&hide_border=false&bg_color=0a0a0f&title_color=ff4444&text_color=ffffff&border_color=ff4444&langs_count=8" width="50%" />
+</a>
 </div>
 
 <br/>
 
-<!-- LANGUAGES -->
+---
+
+## Achievements
+
 <div align="center">
 
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/books.png" width="20" height="20"> Top Languages
+| | | | |
+|:---:|:---:|:---:|:---:|
+| ![Repos](https://img.shields.io/badge/Repos-29+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
 
-<div style="max-width:500px;text-align:left;padding:20px;background:linear-gradient(135deg,#0a0a0f 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;">
+| | | | |
+|:---:|:---:|:---:|:---:|
+| ![AI](https://img.shields.io/badge/AI_Automation-FFA500?style=for-the-badge&logo=robot&logoColor=white) | ![Security](https://img.shields.io/badge/Security_Research-FF4444?style=for-the-badge&logo=shield-halved&logoColor=white) | ![Azure](https://img.shields.io/badge/Azure_Cloud-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white) | ![FullStack](https://img.shields.io/badge/Full_Stack-FF6B35?style=for-the-badge&logo=react&logoColor=white) |
 
-
-      <div style="display:flex;align-items:center;margin:4px 0;">
-        <span style="width:120px;font-size:13px;color:#e0e0e0;font-family:monospace;">HTML</span>
-        <div style="flex:1;height:10px;background:#1a1a2e;border-radius:5px;overflow:hidden;">
-          <div style="width:24%;height:100%;background:#E34F26;border-radius:5px;"></div>
-        </div>
-        <span style="width:45px;font-size:12px;color:#888;text-align:right;margin-left:8px;">24%</span>
-      </div>
-      <div style="display:flex;align-items:center;margin:4px 0;">
-        <span style="width:120px;font-size:13px;color:#e0e0e0;font-family:monospace;">TypeScript</span>
-        <div style="flex:1;height:10px;background:#1a1a2e;border-radius:5px;overflow:hidden;">
-          <div style="width:21%;height:100%;background:#3178C6;border-radius:5px;"></div>
-        </div>
-        <span style="width:45px;font-size:12px;color:#888;text-align:right;margin-left:8px;">21%</span>
-      </div>
-      <div style="display:flex;align-items:center;margin:4px 0;">
-        <span style="width:120px;font-size:13px;color:#e0e0e0;font-family:monospace;">JavaScript</span>
-        <div style="flex:1;height:10px;background:#1a1a2e;border-radius:5px;overflow:hidden;">
-          <div style="width:10%;height:100%;background:#F7DF1E;border-radius:5px;"></div>
-        </div>
-        <span style="width:45px;font-size:12px;color:#888;text-align:right;margin-left:8px;">10%</span>
-      </div>
-      <div style="display:flex;align-items:center;margin:4px 0;">
-        <span style="width:120px;font-size:13px;color:#e0e0e0;font-family:monospace;">Python</span>
-        <div style="flex:1;height:10px;background:#1a1a2e;border-radius:5px;overflow:hidden;">
-          <div style="width:7%;height:100%;background:#3776AB;border-radius:5px;"></div>
-        </div>
-        <span style="width:45px;font-size:12px;color:#888;text-align:right;margin-left:8px;">7%</span>
-      </div>
-      <div style="display:flex;align-items:center;margin:4px 0;">
-        <span style="width:120px;font-size:13px;color:#e0e0e0;font-family:monospace;">CSS</span>
-        <div style="flex:1;height:10px;background:#1a1a2e;border-radius:5px;overflow:hidden;">
-          <div style="width:3%;height:100%;background:#1572B6;border-radius:5px;"></div>
-        </div>
-        <span style="width:45px;font-size:12px;color:#888;text-align:right;margin-left:8px;">3%</span>
-      </div>
-      <div style="display:flex;align-items:center;margin:4px 0;">
-        <span style="width:120px;font-size:13px;color:#e0e0e0;font-family:monospace;">Kotlin</span>
-        <div style="flex:1;height:10px;background:#1a1a2e;border-radius:5px;overflow:hidden;">
-          <div style="width:3%;height:100%;background:#7F52FF;border-radius:5px;"></div>
-        </div>
-        <span style="width:45px;font-size:12px;color:#888;text-align:right;margin-left:8px;">3%</span>
-      </div>
-
-</div>
+| | |
+|:---:|:---:|
+| ![Mobile](https://img.shields.io/badge/Mobile_Dev-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white) | ![IoT](https://img.shields.io/badge/IoT_Hacker-E7352C?style=for-the-badge&logo=espressif&logoColor=white) |
 
 </div>
 
@@ -174,216 +133,41 @@ I love creating solutions that combine cutting-edge technology with innovative d
 
 ---
 
-<!-- ACHIEVEMENTS -->
-<div align="center">
+## Recent Projects
 
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/trophy.png" width="20" height="20"> Achievements
+*Auto-updated every 6 hours via GitHub Actions*
 
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Repositorios-29+-FF4444?style=for-the-badge&logo=github&logoColor=white" alt="Repos"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white" alt="Stars"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white" alt="Forks"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Commits-5+-FF6B35?style=for-the-badge&logo=git&logoColor=white" alt="Commits"/>
-</a>
-
-<br/>
-
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/AI_Automation-FFA500?style=for-the-badge&logo=robot&logoColor=white" alt="AI"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Security_Research-FF4444?style=for-the-badge&logo=security-insights&logoColor=white" alt="Security"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Azure_Cloud-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Full_Stack-FF6B35?style=for-the-badge&logo=react&logoColor=white" alt="FullStack"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/Mobile_Dev-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Mobile"/>
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://img.shields.io/badge/IoT_Hacker-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="IoT"/>
-</a>
-
-</div>
+| Repository | Language | Stars | Forks | Link |
+|:-----------|:--------:|:-----:|:-----:|:----:|
+| **Charles-X-Core** |  | 0 | 0 | [Ver](https://github.com/Charles-X-Core/Charles-X-Core) |
+| **odontologia-sistema** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) | 1 | 0 | [Ver](https://github.com/Charles-X-Core/odontologia-sistema) |
+| **FakeLove-PDF-Tools** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/FakeLove-PDF-Tools) |
+| **packet-tracer-mcp-mitm** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/packet-tracer-mcp-mitm) |
+| **valentines-game** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/valentines-game) |
+| **capv-portfolio** | ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/capv-portfolio) |
 
 <br/>
 
 ---
 
-<!-- RECENT PROJECTS AUTO-GENERATED -->
+## Activity
+
 <div align="center">
-
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/rocket.png" width="20" height="20"> Proyectos Recientes
-
-*Actualizado automaticamente cada 6 horas*
-
-<br/>
-
-
-  <a href="https://github.com/Charles-X-Core/odontologia-sistema">
-    <div style="display:inline-block;width:320px;padding:16px;margin:8px;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;vertical-align:top;">
-      <div style="display:flex;align-items:center;margin-bottom:8px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ff6b35"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/></svg>
-        <span style="color:#ffffff;font-weight:bold;margin-left:8px;font-size:14px;">odontologia-sistema</span>
-      </div>
-      <div style="color:#9ca3af;font-size:12px;margin-bottom:10px;height:32px;overflow:hidden;">Sistema de Historial Clinico Odontologico para escritorio - Gestion completa de pacientes, odontogramas, tratamientos, pagos, recetas, WhatsApp y firma digital. Verificado por doctor odontologo aprobado.</div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span style="background:#F7DF1E;color:white;padding:2px 8px;border-radius:4px;font-size:11px;">JavaScript</span>
-        <span style="color:#ffa500;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#ffa500" style="vertical-align:middle;"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-          1
-        </span>
-        <span style="color:#888;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#888" style="vertical-align:middle;"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8 12.75a.75.75 0 10-1.5 0 .75.75 0 001.5 0z"/></svg>
-          0
-        </span>
-      </div>
-    </div>
-  </a>
-  <a href="https://github.com/Charles-X-Core/Charles-X-Core">
-    <div style="display:inline-block;width:320px;padding:16px;margin:8px;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;vertical-align:top;">
-      <div style="display:flex;align-items:center;margin-bottom:8px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ff6b35"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/></svg>
-        <span style="color:#ffffff;font-weight:bold;margin-left:8px;font-size:14px;">Charles-X-Core</span>
-      </div>
-      <div style="color:#9ca3af;font-size:12px;margin-bottom:10px;height:32px;overflow:hidden;">CHARLES-X - Developer | AI & Automation | Network Security - Profile README</div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span style="background:#8B5CF6;color:white;padding:2px 8px;border-radius:4px;font-size:11px;">N/A</span>
-        <span style="color:#ffa500;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#ffa500" style="vertical-align:middle;"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-          0
-        </span>
-        <span style="color:#888;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#888" style="vertical-align:middle;"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8 12.75a.75.75 0 10-1.5 0 .75.75 0 001.5 0z"/></svg>
-          0
-        </span>
-      </div>
-    </div>
-  </a>
-  <a href="https://github.com/Charles-X-Core/FakeLove-PDF-Tools">
-    <div style="display:inline-block;width:320px;padding:16px;margin:8px;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;vertical-align:top;">
-      <div style="display:flex;align-items:center;margin-bottom:8px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ff6b35"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/></svg>
-        <span style="color:#ffffff;font-weight:bold;margin-left:8px;font-size:14px;">FakeLove-PDF-Tools</span>
-      </div>
-      <div style="color:#9ca3af;font-size:12px;margin-bottom:10px;height:32px;overflow:hidden;">Dark cyberpunk PDF suite with Next.js 14. Merge/Split/Compress PDFs, Image to PDF, Word to PDF, bilingual ES/EN, sarcastic UI, ECG loading screen, binary fireworks. Deploy on Vercel (4.5MB) or self-hosted. Made by CHARLES-X.</div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span style="background:#3178C6;color:white;padding:2px 8px;border-radius:4px;font-size:11px;">TypeScript</span>
-        <span style="color:#ffa500;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#ffa500" style="vertical-align:middle;"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-          0
-        </span>
-        <span style="color:#888;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#888" style="vertical-align:middle;"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8 12.75a.75.75 0 10-1.5 0 .75.75 0 001.5 0z"/></svg>
-          0
-        </span>
-      </div>
-    </div>
-  </a>
-  <a href="https://github.com/Charles-X-Core/packet-tracer-mcp-mitm">
-    <div style="display:inline-block;width:320px;padding:16px;margin:8px;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;vertical-align:top;">
-      <div style="display:flex;align-items:center;margin-bottom:8px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ff6b35"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/></svg>
-        <span style="color:#ffffff;font-weight:bold;margin-left:8px;font-size:14px;">packet-tracer-mcp-mitm</span>
-      </div>
-      <div style="color:#9ca3af;font-size:12px;margin-bottom:10px;height:32px;overflow:hidden;">Automatizacion de redes Cisco con MCP y laboratorio de seguridad MITM</div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span style="background:#3776AB;color:white;padding:2px 8px;border-radius:4px;font-size:11px;">Python</span>
-        <span style="color:#ffa500;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#ffa500" style="vertical-align:middle;"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-          0
-        </span>
-        <span style="color:#888;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#888" style="vertical-align:middle;"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8 12.75a.75.75 0 10-1.5 0 .75.75 0 001.5 0z"/></svg>
-          0
-        </span>
-      </div>
-    </div>
-  </a>
-  <a href="https://github.com/Charles-X-Core/valentines-game">
-    <div style="display:inline-block;width:320px;padding:16px;margin:8px;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;vertical-align:top;">
-      <div style="display:flex;align-items:center;margin-bottom:8px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ff6b35"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/></svg>
-        <span style="color:#ffffff;font-weight:bold;margin-left:8px;font-size:14px;">valentines-game</span>
-      </div>
-      <div style="color:#9ca3af;font-size:12px;margin-bottom:10px;height:32px;overflow:hidden;">Sin descripcion</div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span style="background:#3178C6;color:white;padding:2px 8px;border-radius:4px;font-size:11px;">TypeScript</span>
-        <span style="color:#ffa500;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#ffa500" style="vertical-align:middle;"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-          0
-        </span>
-        <span style="color:#888;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#888" style="vertical-align:middle;"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8 12.75a.75.75 0 10-1.5 0 .75.75 0 001.5 0z"/></svg>
-          0
-        </span>
-      </div>
-    </div>
-  </a>
-  <a href="https://github.com/Charles-X-Core/capv-portfolio">
-    <div style="display:inline-block;width:320px;padding:16px;margin:8px;background:linear-gradient(135deg,#0d0d0d 0%,#1a1a2e 100%);border:1px solid #ff4444;border-radius:12px;vertical-align:top;">
-      <div style="display:flex;align-items:center;margin-bottom:8px;">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="#ff6b35"><path d="M2 2.5A2.5 2.5 0 014.5 0h8.75a.75.75 0 01.75.75v12.5a.75.75 0 01-.75.75h-2.5a.75.75 0 110-1.5h1.75v-2h-8a1 1 0 00-.714 1.7.75.75 0 01-1.072 1.05A2.495 2.495 0 012 11.5v-9z"/></svg>
-        <span style="color:#ffffff;font-weight:bold;margin-left:8px;font-size:14px;">capv-portfolio</span>
-      </div>
-      <div style="color:#9ca3af;font-size:12px;margin-bottom:10px;height:32px;overflow:hidden;">Sin descripcion</div>
-      <div style="display:flex;align-items:center;gap:12px;">
-        <span style="background:#1572B6;color:white;padding:2px 8px;border-radius:4px;font-size:11px;">CSS</span>
-        <span style="color:#ffa500;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#ffa500" style="vertical-align:middle;"><path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"/></svg>
-          0
-        </span>
-        <span style="color:#888;font-size:11px;">
-          <svg width="12" height="12" viewBox="0 0 16 16" fill="#888" style="vertical-align:middle;"><path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75v-.878a2.25 2.25 0 111.5 0v.878a2.25 2.25 0 01-2.25 2.25h-1.5v2.128a2.251 2.251 0 11-1.5 0V8.5h-1.5A2.25 2.25 0 013.5 6.25v-.878a2.25 2.25 0 111.5 0zM5 3.25a.75.75 0 10-1.5 0 .75.75 0 001.5 0zm6.75.75a.75.75 0 100-1.5.75.75 0 000 1.5zM8 12.75a.75.75 0 10-1.5 0 .75.75 0 001.5 0z"/></svg>
-          0
-        </span>
-      </div>
-    </div>
-  </a>
-
-</div>
-
-<br/>
-
----
-
-<!-- ACTIVITY -->
-<div align="center">
-
-### <img src="https://raw.githubusercontent.com/tandpfun/readme-emojis/master/emojis/chart_with_upwards_trend.png" width="20" height="20"> Activity
-
 <a href="https://github.com/Charles-X-Core">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Charles-X-Core&bg_color=0a0a0f&color=ff4444&line=ff6b35&point=ffa500&area=true&area_color=ff4444&hide_border=true" width="100%" />
 </a>
-
 </div>
 
 <br/>
 
 ---
 
-<!-- FOOTER -->
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0f,25:ffa500,50:ff6b35,75:ff4444,100:0a0a0f&height=80&section=footer" width="100%" />
 
-<br/>
-
 ![Profile Views](https://komarev.com/ghpvc/?username=Charles-X-Core&color=ff4444&style=for-the-badge&label=PROFILE+VIEWS&label_color=0a0a0f)
 
-<br/>
-
 **Made with code by CHARLES-X**
-
-*"The only way to do great work is to love what you do." - Steve Jobs*
 
 </div>

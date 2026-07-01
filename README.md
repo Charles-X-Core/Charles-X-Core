@@ -117,7 +117,7 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![Repos](https://img.shields.io/badge/Repos-29+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
+| ![Repos](https://img.shields.io/badge/Repos-30+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
 
 | | | | |
 |:---:|:---:|:---:|:---:|
@@ -145,12 +145,12 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 <td align="center"><img src=".github/generated/project-1.svg" alt="Gunners-Revengers-" width="480" /></td>
 </tr>
 <tr>
-<td align="center"><img src=".github/generated/project-2.svg" alt="FakeLove-PDF-Tools" width="480" /></td>
-<td align="center"><img src=".github/generated/project-3.svg" alt="packet-tracer-mcp-mitm" width="480" /></td>
+<td align="center"><img src=".github/generated/project-2.svg" alt="GunnersRunners" width="480" /></td>
+<td align="center"><img src=".github/generated/project-3.svg" alt="FakeLove-PDF-Tools" width="480" /></td>
 </tr>
 <tr>
-<td align="center"><img src=".github/generated/project-4.svg" alt="APP-DATE" width="480" /></td>
-<td align="center"><img src=".github/generated/project-5.svg" alt="Inventario_MInimarket" width="480" /></td>
+<td align="center"><img src=".github/generated/project-4.svg" alt="packet-tracer-mcp-mitm" width="480" /></td>
+<td align="center"><img src=".github/generated/project-5.svg" alt="APP-DATE" width="480" /></td>
 </tr>
 </table>
 

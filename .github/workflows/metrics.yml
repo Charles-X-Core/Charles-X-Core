@@ -1,0 +1,101 @@
+name: Metrics
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # Daily at 3 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate metrics (classic template)
+        uses: lowlighter/metrics@v3
+        with:
+          # Token
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # User
+          user: Charles-X-Core
+          
+          # Output
+          filename: metrics/classic.svg
+          output_action: github-pages
+          
+          # Base content
+          base: header, activity, community, repository
+          base_indepth: true
+          base_hireable: false
+          
+          # Template
+          template: classic
+          
+          # Timezone
+          config_timezone: America/Lima
+          
+          # Animations
+          config_animations: true
+          
+          # Plugins
+          plugin_languages: true
+          plugin_languages_limit: 8
+          plugin_languages_sections: most-used, recent-used
+          plugin_languages_details: percent, bytes-size
+          
+          plugin_habits: true
+          plugin_habits_facts: true
+          plugin_habits_charts: true
+          plugin_habits_charts_type: bar
+          
+          plugin_isocalendar: true
+          plugin_isocalendar_duration: full-year
+          
+          plugin_stars: true
+          plugin_stars_limit: 5
+          
+          plugin_activity: true
+          plugin_activity_limit: 5
+          plugin_activity_timestamps: true
+          
+          plugin_achievements: true
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 10
+          
+          plugin_lines: true
+          
+          plugin_calendar: true
+          plugin_calendar_limit: 1
+          
+          # Repositories
+          repositories_affiliations: owner
+          repositories_forks: false
+
+      - name: Generate metrics (terminal template)
+        uses: lowlighter/metrics@v3
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: Charles-X-Core
+          filename: metrics/terminal.svg
+          template: terminal
+          config_timezone: America/Lima
+          config_animations: true
+          base: header, activity
+          plugin_languages: true
+          plugin_languages_limit: 6
+          plugin_habits: true
+          plugin_habits_facts: true
+
+      - name: Commit metrics
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: 'metrics/'
+          message: 'chore: update metrics [skip ci]'
+          default_author: github_actions

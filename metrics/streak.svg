@@ -1,0 +1,46 @@
+<svg width="480" height="120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="streak-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4444">
+        <animate attributeName="stop-color" values="#FF4444;#FF6B35;#FFA500;#FF4444" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+    
+    <filter id="streak-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FF4444" flood-opacity="0.4" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="2" y="2" width="476" height="116" rx="14" fill="#0a0a0f" stroke="url(#streak-grad)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Title -->
+  <text x="240" y="30" font-family="'Fira Code', monospace" font-size="14" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
+    Contribution Streak
+  </text>
+  
+  <!-- Streak stats -->
+  <g transform="translate(40, 50)">
+    <text x="0" y="15" font-family="monospace" font-size="10" fill="#888888">Current Streak</text>
+    <text x="0" y="40" font-family="monospace" font-size="28" fill="#FF4444" font-weight="bold" filter="url(#streak-glow)">
+      0 days
+      <animate attributeName="fill" values="#FF4444;#FFA500;#FF4444" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <g transform="translate(280, 50)">
+    <text x="0" y="15" font-family="monospace" font-size="10" fill="#888888">Longest Streak</text>
+    <text x="0" y="40" font-family="monospace" font-size="28" fill="#FFA500" font-weight="bold" filter="url(#streak-glow)">
+      5 days
+    </text>
+  </g>
+</svg>

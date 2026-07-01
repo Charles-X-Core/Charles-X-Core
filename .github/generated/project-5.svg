@@ -17,7 +17,7 @@
     </linearGradient>
     <filter id="proj-5-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feFlood flood-color="#ED8B00" flood-opacity="0.6" result="color"/>
+      <feFlood flood-color="#7F52FF" flood-opacity="0.6" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="shadow"/>
       <feMerge>
         <feMergeNode in="shadow"/>
@@ -49,7 +49,7 @@
   </rect>
 
   <!-- Project screenshot -->
-  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/Inventario_MInimarket" x="16" y="16" width="200" height="130" clip-path="url(#proj-5-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
+  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/APP-DATE" x="16" y="16" width="200" height="130" clip-path="url(#proj-5-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
 
   <!-- Screenshot overlay gradient -->
   <rect x="16" y="16" width="200" height="130" rx="12" fill="url(#proj-5-bg)" opacity="0.3"/>
@@ -61,24 +61,24 @@
   </rect>
 
   <!-- Project icon (Lucide) -->
-  <g transform="translate(236, 24)" stroke="#ED8B00" fill="none" stroke-width="1.5" filter="url(#proj-5-neon)">
+  <g transform="translate(236, 24)" stroke="#7F52FF" fill="none" stroke-width="1.5" filter="url(#proj-5-neon)">
     <g transform="scale(0.9)">
-      <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
-      <animate attributeName="stroke" values="#ED8B00;#FFA500;#ED8B00" dur="3s" begin="2.5s" repeatCount="indefinite"/>
+      <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+      <animate attributeName="stroke" values="#7F52FF;#FFA500;#7F52FF" dur="3s" begin="2.5s" repeatCount="indefinite"/>
     </g>
   </g>
 
   <!-- Project name -->
   <text x="264" y="44" font-family="'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace" font-size="16" fill="#FF6B35" font-weight="bold" filter="url(#proj-5-neon)">
-    Inventario_MInimarket
+    APP-DATE
     <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" begin="2.5s" repeatCount="indefinite"/>
   </text>
 
   <!-- Language badge -->
-  <rect x="264" y="56" width="56" height="22" rx="11" fill="#ED8B00" opacity="0.25"/>
-  <rect x="264" y="56" width="56" height="22" rx="11" fill="none" stroke="#ED8B00" stroke-width="1" opacity="0.6"/>
-  <circle cx="278" cy="67" r="4" fill="#ED8B00"/>
-  <text x="288" y="72" font-family="monospace" font-size="10" fill="#ED8B00">Java</text>
+  <rect x="264" y="56" width="72" height="22" rx="11" fill="#7F52FF" opacity="0.25"/>
+  <rect x="264" y="56" width="72" height="22" rx="11" fill="none" stroke="#7F52FF" stroke-width="1" opacity="0.6"/>
+  <circle cx="278" cy="67" r="4" fill="#7F52FF"/>
+  <text x="288" y="72" font-family="monospace" font-size="10" fill="#7F52FF">Kotlin</text>
 
   <!-- Star icon (Lucide) -->
   <g transform="translate(264, 90)" stroke="#FFA500" fill="none" stroke-width="1.5">
@@ -99,12 +99,12 @@
 
   <!-- Description -->
   <text x="264" y="130" font-family="monospace" font-size="10" fill="#888888">
-    Este es un inventario donde se planea ag
-    <tspan x="264" dy="14">regar una  base de datos enlazada a un s</tspan>
+    Applicacion de citas creado para lima
+    
   </text>
 
   <!-- View Code button -->
-  <a href="https://github.com/Charles-X-Core/Inventario_MInimarket" target="_blank">
+  <a href="https://github.com/Charles-X-Core/APP-DATE" target="_blank">
     <g transform="translate(264, 170)">
       <rect x="0" y="0" width="90" height="30" rx="15" fill="none" stroke="#FF4444" stroke-width="1.5">
         <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="2s" begin="2.5s" repeatCount="indefinite"/>

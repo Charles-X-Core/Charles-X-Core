@@ -17,7 +17,7 @@
     </linearGradient>
     <filter id="proj-3-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feFlood flood-color="#3776AB" flood-opacity="0.6" result="color"/>
+      <feFlood flood-color="#3178C6" flood-opacity="0.6" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="shadow"/>
       <feMerge>
         <feMergeNode in="shadow"/>
@@ -49,7 +49,7 @@
   </rect>
 
   <!-- Project screenshot -->
-  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/packet-tracer-mcp-mitm" x="16" y="16" width="200" height="130" clip-path="url(#proj-3-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
+  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/FakeLove-PDF-Tools" x="16" y="16" width="200" height="130" clip-path="url(#proj-3-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
 
   <!-- Screenshot overlay gradient -->
   <rect x="16" y="16" width="200" height="130" rx="12" fill="url(#proj-3-bg)" opacity="0.3"/>
@@ -61,24 +61,24 @@
   </rect>
 
   <!-- Project icon (Lucide) -->
-  <g transform="translate(236, 24)" stroke="#3776AB" fill="none" stroke-width="1.5" filter="url(#proj-3-neon)">
+  <g transform="translate(236, 24)" stroke="#3178C6" fill="none" stroke-width="1.5" filter="url(#proj-3-neon)">
     <g transform="scale(0.9)">
-      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
-      <animate attributeName="stroke" values="#3776AB;#FFA500;#3776AB" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+      <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
+      <animate attributeName="stroke" values="#3178C6;#FFA500;#3178C6" dur="3s" begin="1.5s" repeatCount="indefinite"/>
     </g>
   </g>
 
   <!-- Project name -->
   <text x="264" y="44" font-family="'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace" font-size="16" fill="#FF6B35" font-weight="bold" filter="url(#proj-3-neon)">
-    packet-tracer-mcp-mitm
+    FakeLove-PDF-Tools
     <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" begin="1.5s" repeatCount="indefinite"/>
   </text>
 
   <!-- Language badge -->
-  <rect x="264" y="56" width="72" height="22" rx="11" fill="#3776AB" opacity="0.25"/>
-  <rect x="264" y="56" width="72" height="22" rx="11" fill="none" stroke="#3776AB" stroke-width="1" opacity="0.6"/>
-  <circle cx="278" cy="67" r="4" fill="#3776AB"/>
-  <text x="288" y="72" font-family="monospace" font-size="10" fill="#3776AB">Python</text>
+  <rect x="264" y="56" width="104" height="22" rx="11" fill="#3178C6" opacity="0.25"/>
+  <rect x="264" y="56" width="104" height="22" rx="11" fill="none" stroke="#3178C6" stroke-width="1" opacity="0.6"/>
+  <circle cx="278" cy="67" r="4" fill="#3178C6"/>
+  <text x="288" y="72" font-family="monospace" font-size="10" fill="#3178C6">TypeScript</text>
 
   <!-- Star icon (Lucide) -->
   <g transform="translate(264, 90)" stroke="#FFA500" fill="none" stroke-width="1.5">
@@ -99,12 +99,12 @@
 
   <!-- Description -->
   <text x="264" y="130" font-family="monospace" font-size="10" fill="#888888">
-    Automatizacion de redes Cisco con MCP y 
-    <tspan x="264" dy="14">laboratorio de seguridad MITM</tspan>
+    Dark cyberpunk PDF suite with Next.js 14
+    <tspan x="264" dy="14">. Merge/Split/Compress PDFs, Image to PD</tspan>
   </text>
 
   <!-- View Code button -->
-  <a href="https://github.com/Charles-X-Core/packet-tracer-mcp-mitm" target="_blank">
+  <a href="https://github.com/Charles-X-Core/FakeLove-PDF-Tools" target="_blank">
     <g transform="translate(264, 170)">
       <rect x="0" y="0" width="90" height="30" rx="15" fill="none" stroke="#FF4444" stroke-width="1.5">
         <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="2s" begin="1.5s" repeatCount="indefinite"/>
@@ -124,6 +124,22 @@
 
   <!-- View Live button (only if homepage is a real external URL) -->
   
+  <a href="https://fake-love-pdf-tools.vercel.app" target="_blank">
+    <g transform="translate(364, 170)">
+      <rect x="0" y="0" width="90" height="30" rx="15" fill="none" stroke="#FFA500" stroke-width="1.5">
+        <animate attributeName="stroke" values="#FFA500;#FF4444;#FFA500" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(10, 8)" stroke="#FFA500" fill="none" stroke-width="1.5">
+        <g transform="scale(0.65)">
+          <path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        </g>
+      </g>
+      <text x="50" y="20" font-family="monospace" font-size="10" fill="#FFA500" text-anchor="middle">
+        Live
+        <animate attributeName="fill" values="#FFA500;#FF4444;#FFA500" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </a>
 
   <!-- Floating particles -->
   <circle cx="40" cy="240" r="1.5" fill="#FF4444" opacity="0">

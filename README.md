@@ -93,18 +93,19 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 ## GitHub Stats
 
 <div align="center">
-<a href="https://github.com/Charles-X-Core">
-<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&hide_border=false&count_private=true&include_all_commits=true&bg_color=0a0a0f&title_color=ff4444&icon_color=ff6b35&text_color=ffffff&border_color=ff4444" width="48%" />
-</a>
-<a href="https://github.com/Charles-X-Core">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Charles-X-Core&theme=radical&hide_border=false&background=0a0a0f&ring=ff4444&fire=ff6b35&currStreakLabel=ffa500&sideLabels=ffffff&dates=ffffff&border=ff4444" width="48%" />
-</a>
-</div>
 
-<div align="center">
-<a href="https://github.com/Charles-X-Core">
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=radical&hide_border=false&bg_color=0a0a0f&title_color=ff4444&text_color=ffffff&border_color=ff4444&langs_count=8" width="50%" />
-</a>
+<!-- Stats Card (auto-generated) -->
+<img src="metrics/stats.svg" width="480" />
+
+<!-- Streak Card (auto-generated) -->
+<img src="metrics/streak.svg" width="480" />
+
+<!-- Languages Card (auto-generated) -->
+<img src="metrics/languages.svg" width="480" />
+
+<!-- Lowlighter Metrics (classic template) -->
+<img src="metrics/classic.svg" width="100%" />
+
 </div>
 
 <br/>

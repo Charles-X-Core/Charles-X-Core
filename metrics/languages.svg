@@ -1,0 +1,63 @@
+<svg width="480" height="160" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="langs-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4444">
+        <animate attributeName="stop-color" values="#FF4444;#FF6B35;#FFA500;#FF4444" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#FFA500"/>
+    </linearGradient>
+    
+    <filter id="langs-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FF6B35" flood-opacity="0.3" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="2" y="2" width="476" height="156" rx="14" fill="#0a0a0f" stroke="url(#langs-grad)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Title -->
+  <text x="240" y="35" font-family="'Fira Code', monospace" font-size="16" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#langs-glow)">
+    Top Languages
+    <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Language bar -->
+  
+    <rect x="50" y="80" width="133" height="20" rx="4" fill="#3178C6" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="183" y="80" width="95" height="20" rx="4" fill="#F7DF1E" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="278" y="80" width="76" height="20" rx="4" fill="#3776AB" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="354" y="80" width="45.6" height="20" rx="4" fill="#7F52FF" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="0.8999999999999999s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="399.6" y="80" width="30.4" height="20" rx="4" fill="#ED8B00" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="1.2s" repeatCount="indefinite"/>
+    </rect>
+  
+  <!-- Language labels -->
+  
+    <circle cx="58" cy="125" r="5" fill="#3178C6"/>
+    <text x="68" y="130" font-family="monospace" font-size="10" fill="#ffffff">TypeScript 35%</text>
+    <circle cx="191" cy="125" r="5" fill="#F7DF1E"/>
+    <text x="201" y="130" font-family="monospace" font-size="10" fill="#ffffff">JavaScript 25%</text>
+    <circle cx="286" cy="125" r="5" fill="#3776AB"/>
+    <text x="296" y="130" font-family="monospace" font-size="10" fill="#ffffff">Python 20%</text>
+    <circle cx="362" cy="125" r="5" fill="#7F52FF"/>
+    <text x="372" y="130" font-family="monospace" font-size="10" fill="#ffffff">Kotlin 12%</text>
+    <circle cx="407.6" cy="125" r="5" fill="#ED8B00"/>
+    <text x="417.6" y="130" font-family="monospace" font-size="10" fill="#ffffff">Java 8%</text>
+</svg>

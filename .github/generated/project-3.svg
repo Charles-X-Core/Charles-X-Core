@@ -1,0 +1,157 @@
+<svg width="480" height="260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="proj-3-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4444">
+        <animate attributeName="stop-color" values="#FF4444;#FF6B35;#FFA500;#FF4444" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#FF6B35">
+        <animate attributeName="stop-color" values="#FF6B35;#FFA500;#FF4444;#FF6B35" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#FFA500">
+        <animate attributeName="stop-color" values="#FFA500;#FF4444;#FF6B35;#FFA500" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <linearGradient id="proj-3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="100%" stop-color="#111118"/>
+    </linearGradient>
+    <filter id="proj-3-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#3776AB" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="proj-3-neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#FF6B35" flood-opacity="0.4" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="proj-3-clip">
+      <rect x="16" y="16" width="200" height="130" rx="12"/>
+    </clipPath>
+  </defs>
+
+  <!-- Glow effect behind card -->
+  <rect x="0" y="0" width="480" height="260" rx="16" fill="none" stroke="url(#proj-3-grad)" stroke-width="1" filter="url(#proj-3-glow)" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.15;0.4" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Card background -->
+  <rect x="2" y="2" width="476" height="256" rx="14" fill="url(#proj-3-bg)" stroke="url(#proj-3-grad)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Project screenshot -->
+  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/packet-tracer-mcp-mitm" x="16" y="16" width="200" height="130" clip-path="url(#proj-3-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
+
+  <!-- Screenshot overlay gradient -->
+  <rect x="16" y="16" width="200" height="130" rx="12" fill="url(#proj-3-bg)" opacity="0.3"/>
+
+  <!-- Animated scan line over screenshot -->
+  <rect x="16" y="16" width="200" height="4" fill="url(#proj-3-grad)" opacity="0.6" clip-path="url(#proj-3-clip)">
+    <animate attributeName="y" values="16;142;16" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Project icon (Lucide) -->
+  <g transform="translate(236, 24)" stroke="#3776AB" fill="none" stroke-width="1.5" filter="url(#proj-3-neon)">
+    <g transform="scale(0.9)">
+      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+      <animate attributeName="stroke" values="#3776AB;#FFA500;#3776AB" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <!-- Project name -->
+  <text x="264" y="44" font-family="'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace" font-size="16" fill="#FF6B35" font-weight="bold" filter="url(#proj-3-neon)">
+    packet-tracer-mcp-mitm
+    <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Language badge -->
+  <rect x="264" y="56" width="72" height="22" rx="11" fill="#3776AB" opacity="0.25"/>
+  <rect x="264" y="56" width="72" height="22" rx="11" fill="none" stroke="#3776AB" stroke-width="1" opacity="0.6"/>
+  <circle cx="278" cy="67" r="4" fill="#3776AB"/>
+  <text x="288" y="72" font-family="monospace" font-size="10" fill="#3776AB">Python</text>
+
+  <!-- Star icon (Lucide) -->
+  <g transform="translate(264, 90)" stroke="#FFA500" fill="none" stroke-width="1.5">
+    <g transform="scale(0.65)">
+      <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"/>
+      <animate attributeName="stroke" values="#FFA500;#FF4444;#FFA500" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+    </g>
+  </g>
+  <text x="284" y="100" font-family="monospace" font-size="12" fill="#ffffff">0</text>
+
+  <!-- Fork icon (Lucide) -->
+  <g transform="translate(320, 90)" stroke="#FF6B35" fill="none" stroke-width="1.5">
+    <g transform="scale(0.65)">
+      <circle cx="12" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="18" cy="6" r="3"/><path d="M18 9v2c0 .6-.4 1-1 1H7c-.6 0-1-.4-1-1V9"/><path d="M12 12v3"/>
+    </g>
+  </g>
+  <text x="340" y="100" font-family="monospace" font-size="12" fill="#ffffff">0</text>
+
+  <!-- Description -->
+  <text x="264" y="130" font-family="monospace" font-size="10" fill="#888888">
+    Automatizacion de redes Cisco con MCP y 
+    <tspan x="264" dy="14">laboratorio de seguridad MITM</tspan>
+  </text>
+
+  <!-- View Code button -->
+  <a href="https://github.com/Charles-X-Core/packet-tracer-mcp-mitm" target="_blank">
+    <g transform="translate(264, 170)">
+      <rect x="0" y="0" width="90" height="30" rx="15" fill="none" stroke="#FF4444" stroke-width="1.5">
+        <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <g transform="translate(10, 8)" stroke="#FF6B35" fill="none" stroke-width="1.5">
+        <g transform="scale(0.65)">
+          <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
+        </g>
+      </g>
+      <text x="50" y="20" font-family="monospace" font-size="10" fill="#FF6B35" text-anchor="middle">
+        Codigo
+        <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="2s" begin="1.5s" repeatCount="indefinite"/>
+      </text>
+    </g>
+  </a>
+
+  <!-- View Live button (only if homepage is a real external URL) -->
+  
+
+  <!-- Floating particles -->
+  <circle cx="40" cy="240" r="1.5" fill="#FF4444" opacity="0">
+    <animate attributeName="cy" values="250;10" dur="9s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="9s" begin="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="40;60;40" dur="11s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="450" cy="200" r="1" fill="#FF6B35" opacity="0">
+    <animate attributeName="cy" values="250;20" dur="10s" begin="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="10s" begin="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="230" cy="150" r="2" fill="#FFA500" opacity="0">
+    <animate attributeName="cy" values="260;5" dur="8s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="8s" begin="2s" repeatCount="indefinite"/>
+    <animate attributeName="cx" values="230;250;230" dur="12s" begin="1.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Corner accents -->
+  <path d="M 16 40 L 16 20 Q 16 16 20 16 L 40 16" fill="none" stroke="#FF4444" stroke-width="2" opacity="0.6">
+    <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 464 40 L 464 20 Q 464 16 460 16 L 440 16" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.6">
+    <animate attributeName="stroke" values="#FF6B35;#FFA500;#FF6B35" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 16 220 L 16 240 Q 16 244 20 244 L 40 244" fill="none" stroke="#FFA500" stroke-width="2" opacity="0.6">
+    <animate attributeName="stroke" values="#FFA500;#FF4444;#FFA500" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 464 220 L 464 240 Q 464 244 460 244 L 440 244" fill="none" stroke="#FF4444" stroke-width="2" opacity="0.6">
+    <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="3s" begin="1.5s" repeatCount="indefinite"/>
+  </path>
+</svg>

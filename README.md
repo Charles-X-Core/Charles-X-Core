@@ -133,18 +133,28 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 
 ---
 
-## Recent Projects
+<div align="center">
 
-*Auto-updated every 6 hours via GitHub Actions*
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=FF4444&center=true&vCenter=true&width=500&lines=Recent+Projects;Proyectos+Recientes&duration=2000" alt="Projects Title" />
 
-| Repository | Language | Stars | Forks | Link |
-|:-----------|:--------:|:-----:|:-----:|:----:|
-| **Charles-X-Core** |  | 0 | 0 | [Ver](https://github.com/Charles-X-Core/Charles-X-Core) |
-| **odontologia-sistema** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white) | 1 | 0 | [Ver](https://github.com/Charles-X-Core/odontologia-sistema) |
-| **FakeLove-PDF-Tools** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/FakeLove-PDF-Tools) |
-| **packet-tracer-mcp-mitm** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/packet-tracer-mcp-mitm) |
-| **valentines-game** | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/valentines-game) |
-| **capv-portfolio** | ![CSS](https://img.shields.io/badge/CSS-1572B6?style=flat-square&logo=css&logoColor=white) | 0 | 0 | [Ver](https://github.com/Charles-X-Core/capv-portfolio) |
+<br/>
+
+<table align="center">
+<tr>
+<td align="center"><img src=".github/generated/project-0.svg" alt="odontologia-sistema" width="480" /></td>
+<td align="center"><img src=".github/generated/project-1.svg" alt="Gunners-Revengers-" width="480" /></td>
+</tr>
+<tr>
+<td align="center"><img src=".github/generated/project-2.svg" alt="FakeLove-PDF-Tools" width="480" /></td>
+<td align="center"><img src=".github/generated/project-3.svg" alt="packet-tracer-mcp-mitm" width="480" /></td>
+</tr>
+<tr>
+<td align="center"><img src=".github/generated/project-4.svg" alt="APP-DATE" width="480" /></td>
+<td align="center"><img src=".github/generated/project-5.svg" alt="Inventario_MInimarket" width="480" /></td>
+</tr>
+</table>
+
+</div>
 
 <br/>
 

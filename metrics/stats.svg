@@ -1,6 +1,6 @@
-<svg width="480" height="280" xmlns="http://www.w3.org/2000/svg">
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="stats-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="sg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF4444">
         <animate attributeName="stop-color" values="#FF4444;#FF6B35;#FFA500;#FF4444" dur="4s" repeatCount="indefinite"/>
       </stop>
@@ -11,121 +11,114 @@
         <animate attributeName="stop-color" values="#FFA500;#FF4444;#FF6B35;#FFA500" dur="4s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
-    
-    <filter id="stats-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-color="#FF6B35" flood-opacity="0.5" result="color"/>
+    <filter id="sglow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#FF6B35" flood-opacity="0.6" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="shadow"/>
-      <feMerge>
-        <feMergeNode in="shadow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    
-    <linearGradient id="stats-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="sbg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0a0a0f"/>
       <stop offset="100%" stop-color="#111118"/>
     </linearGradient>
   </defs>
   
-  <!-- Glow behind card -->
-  <rect x="0" y="0" width="480" height="280" rx="16" fill="none" stroke="url(#stats-grad)" stroke-width="1" filter="url(#stats-glow)" opacity="0.4">
+  <rect x="0" y="0" width="600" height="300" rx="18" fill="none" stroke="url(#sg)" stroke-width="1" filter="url(#sglow)" opacity="0.4">
     <animate attributeName="opacity" values="0.4;0.15;0.4" dur="3s" repeatCount="indefinite"/>
   </rect>
-  
-  <!-- Card background -->
-  <rect x="2" y="2" width="476" height="276" rx="14" fill="url(#stats-bg)" stroke="url(#stats-grad)" stroke-width="2">
+  <rect x="2" y="2" width="596" height="296" rx="16" fill="url(#sbg)" stroke="url(#sg)" stroke-width="2">
     <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
   </rect>
   
-  <!-- Title -->
-  <text x="240" y="38" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="18" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
+  <text x="300" y="42" font-family="'Fira Code', monospace" font-size="20" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
     GitHub Stats
     <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" repeatCount="indefinite"/>
   </text>
+  <line x1="180" y1="55" x2="420" y2="55" stroke="url(#sg)" stroke-width="1" opacity="0.5"/>
   
-  <!-- Divider line -->
-  <line x1="140" y1="48" x2="340" y2="48" stroke="url(#stats-grad)" stroke-width="1" opacity="0.5"/>
-  
-  <!-- Row 1: Repos | Stars -->
-  <g transform="translate(30, 65)">
-    <rect x="0" y="0" width="200" height="55" rx="8" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
-    <text x="100" y="20" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">REPOS</text>
-    <text x="100" y="45" font-family="monospace" font-size="26" fill="#FF4444" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
-      30
-      <animate attributeName="fill" values="#FF4444;#FF6B35;#FF4444" dur="3s" repeatCount="indefinite"/>
+  <!-- Stats grid 3x2 -->
+  <g transform="translate(30, 75)">
+    <rect x="0" y="0" width="170" height="60" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="85" y="22" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">REPOS</text>
+    <text x="85" y="48" font-family="monospace" font-size="28" fill="#FF4444" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
+      30<animate attributeName="fill" values="#FF4444;#FF6B35;#FF4444" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>
-  
-  <g transform="translate(250, 65)">
-    <rect x="0" y="0" width="200" height="55" rx="8" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
-    <text x="100" y="20" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">STARS</text>
-    <text x="100" y="45" font-family="monospace" font-size="26" fill="#FFA500" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
-      2
-      <animate attributeName="fill" values="#FFA500;#FF4444;#FFA500" dur="3s" repeatCount="indefinite"/>
+  <g transform="translate(215, 75)">
+    <rect x="0" y="0" width="170" height="60" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="85" y="22" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">STARS</text>
+    <text x="85" y="48" font-family="monospace" font-size="28" fill="#FFA500" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
+      2<animate attributeName="fill" values="#FFA500;#FF4444;#FFA500" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>
-  
-  <!-- Row 2: Followers | Following -->
-  <g transform="translate(30, 130)">
-    <rect x="0" y="0" width="200" height="55" rx="8" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
-    <text x="100" y="20" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">FOLLOWERS</text>
-    <text x="100" y="45" font-family="monospace" font-size="26" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
+  <g transform="translate(400, 75)">
+    <rect x="0" y="0" width="170" height="60" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="85" y="22" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">FORKS</text>
+    <text x="85" y="48" font-family="monospace" font-size="28" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
       0
     </text>
   </g>
   
-  <g transform="translate(250, 130)">
-    <rect x="0" y="0" width="200" height="55" rx="8" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
-    <text x="100" y="20" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">FOLLOWING</text>
-    <text x="100" y="45" font-family="monospace" font-size="26" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
+  <g transform="translate(30, 150)">
+    <rect x="0" y="0" width="170" height="60" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="85" y="22" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">FOLLOWERS</text>
+    <text x="85" y="48" font-family="monospace" font-size="28" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
       0
     </text>
   </g>
-  
-  <!-- Row 3: Commits | Languages -->
-  <g transform="translate(30, 195)">
-    <rect x="0" y="0" width="200" height="55" rx="8" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
-    <text x="100" y="20" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">COMMITS</text>
-    <text x="100" y="45" font-family="monospace" font-size="26" fill="#FF4444" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
+  <g transform="translate(215, 150)">
+    <rect x="0" y="0" width="170" height="60" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="85" y="22" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">FOLLOWING</text>
+    <text x="85" y="48" font-family="monospace" font-size="28" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
       0
-      <animate attributeName="fill" values="#FF4444;#FFA500;#FF4444" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <g transform="translate(400, 150)">
+    <rect x="0" y="0" width="170" height="60" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="85" y="22" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">COMMITS</text>
+    <text x="85" y="48" font-family="monospace" font-size="28" fill="#FF4444" text-anchor="middle" font-weight="bold" filter="url(#sglow)">
+      0<animate attributeName="fill" values="#FF4444;#FFA500;#FF4444" dur="2s" repeatCount="indefinite"/>
     </text>
   </g>
   
-  <g transform="translate(250, 195)">
-    <rect x="0" y="0" width="200" height="55" rx="8" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
-    <text x="100" y="20" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">LANGUAGES</text>
-    <text x="100" y="45" font-family="monospace" font-size="26" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
-      10
-    </text>
+  <!-- Bottom stat bar -->
+  <g transform="translate(30, 230)">
+    <rect x="0" y="0" width="540" height="40" rx="20" fill="#0a0a0f" stroke="url(#sg)" stroke-width="1" opacity="0.8"/>
+    <circle cx="30" cy="20" r="8" fill="#FF4444" opacity="0.6">
+      <animate attributeName="r" values="8;10;8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="50" y="24" font-family="monospace" font-size="11" fill="#888888">10 languages</text>
+    <text x="200" y="24" font-family="monospace" font-size="11" fill="#888888">|</text>
+    <circle cx="220" cy="20" r="8" fill="#FF6B35" opacity="0.6">
+      <animate attributeName="r" values="8;10;8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="240" y="24" font-family="monospace" font-size="11" fill="#888888">30 repos</text>
+    <text x="360" y="24" font-family="monospace" font-size="11" fill="#888888">|</text>
+    <circle cx="380" cy="20" r="8" fill="#FFA500" opacity="0.6">
+      <animate attributeName="r" values="8;10;8" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="400" y="24" font-family="monospace" font-size="11" fill="#888888">2 stars earned</text>
   </g>
   
   <!-- Corner accents -->
-  <path d="M 16 40 L 16 20 Q 16 16 20 16 L 40 16" fill="none" stroke="#FF4444" stroke-width="2" opacity="0.6">
+  <path d="M 18 45 L 18 22 Q 18 18 22 18 L 45 18" fill="none" stroke="#FF4444" stroke-width="2" opacity="0.6">
     <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="3s" repeatCount="indefinite"/>
   </path>
-  <path d="M 464 40 L 464 20 Q 464 16 460 16 L 440 16" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.6">
-    <animate attributeName="stroke" values="#FF6B35;#FFA500;#FF6B35" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 16 240 L 16 260 Q 16 264 20 264 L 40 264" fill="none" stroke="#FFA500" stroke-width="2" opacity="0.6">
-    <animate attributeName="stroke" values="#FFA500;#FF4444;#FFA500" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 464 240 L 464 260 Q 464 264 460 264 L 440 264" fill="none" stroke="#FF4444" stroke-width="2" opacity="0.6">
-    <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="3s" repeatCount="indefinite"/>
-  </path>
+  <path d="M 582 45 L 582 22 Q 582 18 578 18 L 555 18" fill="none" stroke="#FF6B35" stroke-width="2" opacity="0.6"/>
+  <path d="M 18 255 L 18 278 Q 18 282 22 282 L 45 282" fill="none" stroke="#FFA500" stroke-width="2" opacity="0.6"/>
+  <path d="M 582 255 L 582 278 Q 582 282 578 282 L 555 282" fill="none" stroke="#FF4444" stroke-width="2" opacity="0.6"/>
   
   <!-- Floating particles -->
-  <circle cx="50" cy="260" r="1.5" fill="#FF4444" opacity="0">
-    <animate attributeName="cy" values="270;10" dur="7s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.6;0" dur="7s" repeatCount="indefinite"/>
+  <circle cx="60" cy="280" r="2" fill="#FF4444" opacity="0">
+    <animate attributeName="cy" values="290;10" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.6;0" dur="8s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="430" cy="200" r="1" fill="#FF6B35" opacity="0">
-    <animate attributeName="cy" values="270;20" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.4;0" dur="8s" repeatCount="indefinite"/>
+  <circle cx="540" cy="200" r="1.5" fill="#FF6B35" opacity="0">
+    <animate attributeName="cy" values="290;20" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.4;0" dur="9s" repeatCount="indefinite"/>
   </circle>
-  <circle cx="240" cy="280" r="2" fill="#FFA500" opacity="0">
-    <animate attributeName="cy" values="290;5" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0" dur="6s" repeatCount="indefinite"/>
+  <circle cx="300" cy="290" r="2.5" fill="#FFA500" opacity="0">
+    <animate attributeName="cy" values="300;5" dur="7s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="7s" repeatCount="indefinite"/>
   </circle>
 </svg>

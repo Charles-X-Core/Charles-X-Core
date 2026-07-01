@@ -95,15 +95,15 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 <table align="center">
 <tr>
 <td colspan="2" align="center">
-<img src="metrics/stats.svg" width="480" />
+<img src="metrics/stats.svg" width="600" />
 </td>
 </tr>
 <tr>
 <td align="center">
-<img src="metrics/streak.svg" width="235" />
+<img src="metrics/streak.svg" width="295" />
 </td>
 <td align="center">
-<img src="metrics/languages.svg" width="235" />
+<img src="metrics/languages.svg" width="295" />
 </td>
 </tr>
 </table>

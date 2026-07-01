@@ -1,54 +1,52 @@
-<svg width="235" height="140" xmlns="http://www.w3.org/2000/svg">
+<svg width="295" height="160" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="streak-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="stg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#FF4444">
         <animate attributeName="stop-color" values="#FF4444;#FF6B35;#FFA500;#FF4444" dur="4s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#FFA500"/>
     </linearGradient>
-    
-    <filter id="streak-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="stglow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur"/>
       <feFlood flood-color="#FF4444" flood-opacity="0.4" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="shadow"/>
-      <feMerge>
-        <feMergeNode in="shadow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
   </defs>
   
-  <!-- Background -->
-  <rect x="2" y="2" width="231" height="136" rx="12" fill="#0a0a0f" stroke="url(#streak-grad)" stroke-width="2">
+  <rect x="2" y="2" width="291" height="156" rx="14" fill="#0a0a0f" stroke="url(#stg)" stroke-width="2">
     <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
   </rect>
   
-  <!-- Title -->
-  <text x="117" y="24" font-family="'Fira Code', monospace" font-size="11" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
-    Streak
+  <text x="147" y="28" font-family="'Fira Code', monospace" font-size="13" fill="#FF6B35" text-anchor="middle" font-weight="bold" filter="url(#stglow)">
+    Contribution Streak
   </text>
-  
-  <!-- Divider -->
-  <line x1="50" y1="32" x2="185" y2="32" stroke="url(#streak-grad)" stroke-width="0.5" opacity="0.5"/>
+  <line x1="60" y1="38" x2="235" y2="38" stroke="url(#stg)" stroke-width="0.5" opacity="0.5"/>
   
   <!-- Current Streak -->
-  <text x="117" y="55" font-family="monospace" font-size="8" fill="#888888" text-anchor="middle">CURRENT</text>
-  <text x="117" y="80" font-family="monospace" font-size="22" fill="#FF4444" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
-    0
-    <animate attributeName="fill" values="#FF4444;#FFA500;#FF4444" dur="2s" repeatCount="indefinite"/>
-  </text>
+  <g transform="translate(25, 50)">
+    <rect x="0" y="0" width="110" height="90" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="55" y="22" font-family="monospace" font-size="9" fill="#888888" text-anchor="middle">CURRENT</text>
+    <text x="55" y="55" font-family="monospace" font-size="32" fill="#FF4444" text-anchor="middle" font-weight="bold" filter="url(#stglow)">
+      0
+      <animate attributeName="fill" values="#FF4444;#FFA500;#FF4444" dur="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="55" y="75" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">days</text>
+  </g>
   
   <!-- Longest Streak -->
-  <text x="117" y="100" font-family="monospace" font-size="8" fill="#888888" text-anchor="middle">LONGEST</text>
-  <text x="117" y="122" font-family="monospace" font-size="18" fill="#FFA500" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
-    5
-  </text>
+  <g transform="translate(160, 50)">
+    <rect x="0" y="0" width="110" height="90" rx="10" fill="#0a0a0f" stroke="#1a1a2e" stroke-width="1"/>
+    <text x="55" y="22" font-family="monospace" font-size="9" fill="#888888" text-anchor="middle">LONGEST</text>
+    <text x="55" y="55" font-family="monospace" font-size="32" fill="#FFA500" text-anchor="middle" font-weight="bold" filter="url(#stglow)">
+      5
+    </text>
+    <text x="55" y="75" font-family="monospace" font-size="10" fill="#888888" text-anchor="middle">days</text>
+  </g>
   
   <!-- Corner accents -->
-  <path d="M 12 30 L 12 16 Q 12 12 16 12 L 30 12" fill="none" stroke="#FF4444" stroke-width="1.5" opacity="0.5">
-    <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="3s" repeatCount="indefinite"/>
-  </path>
-  <path d="M 223 30 L 223 16 Q 223 12 219 12 L 205 12" fill="none" stroke="#FF6B35" stroke-width="1.5" opacity="0.5"/>
-  <path d="M 12 110 L 12 124 Q 12 128 16 128 L 30 128" fill="none" stroke="#FFA500" stroke-width="1.5" opacity="0.5"/>
-  <path d="M 223 110 L 223 124 Q 223 128 219 128 L 205 128" fill="none" stroke="#FF4444" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 14 35 L 14 18 Q 14 14 18 14 L 35 14" fill="none" stroke="#FF4444" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 281 35 L 281 18 Q 281 14 277 14 L 260 14" fill="none" stroke="#FF6B35" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 14 125 L 14 142 Q 14 146 18 146 L 35 146" fill="none" stroke="#FFA500" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 281 125 L 281 142 Q 281 146 277 146 L 260 146" fill="none" stroke="#FF4444" stroke-width="1.5" opacity="0.5"/>
 </svg>

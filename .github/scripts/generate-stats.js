@@ -11,7 +11,7 @@ const COLORS = {
   accent: '#FFA500',
   text: '#ffffff',
   textMuted: '#888888',
-  border: '#222222'
+  border: '#1a1a2e'
 };
 
 async function fetchJSON(url) {
@@ -27,9 +27,7 @@ async function getGitHubStats() {
   const ownedRepos = repos.filter(r => !r.fork);
   const totalStars = ownedRepos.reduce((sum, r) => sum + r.stargazers_count, 0);
   const totalForks = ownedRepos.reduce((sum, r) => sum + r.forks_count, 0);
-  const totalIssues = ownedRepos.reduce((sum, r) => sum + r.open_issues_count, 0);
   
-  // Get contributions data
   let events = [];
   try {
     events = await fetchJSON(`https://api.github.com/users/${USERNAME}/events/public?per_page=100`);
@@ -42,25 +40,26 @@ async function getGitHubStats() {
     const commits = e.payload && e.payload.commits ? e.payload.commits.length : 0;
     return sum + commits;
   }, 0);
+
+  // Count unique languages
+  const languages = [...new Set(ownedRepos.filter(r => r.language).map(r => r.language))];
   
   return {
     repos: ownedRepos.length,
     stars: totalStars,
     forks: totalForks,
-    issues: totalIssues,
     followers: user.followers,
     following: user.following,
     commits: commitsThisWeek,
-    contributions: user.public_gists + user.public_repos
+    languages: languages.length,
+    topLanguages: languages.slice(0, 6)
   };
 }
 
 function generateStatsCard(stats) {
-  const id = 'stats';
-  
   return `<svg width="480" height="280" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="${id}-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="stats-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="${COLORS.primary}">
         <animate attributeName="stop-color" values="${COLORS.primary};${COLORS.secondary};${COLORS.accent};${COLORS.primary}" dur="4s" repeatCount="indefinite"/>
       </stop>
@@ -72,9 +71,9 @@ function generateStatsCard(stats) {
       </stop>
     </linearGradient>
     
-    <filter id="${id}-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="stats-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feFlood flood-color="${COLORS.secondary}" flood-opacity="0.4" result="color"/>
+      <feFlood flood-color="${COLORS.secondary}" flood-opacity="0.5" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="shadow"/>
       <feMerge>
         <feMergeNode in="shadow"/>
@@ -82,80 +81,82 @@ function generateStatsCard(stats) {
       </feMerge>
     </filter>
     
-    <linearGradient id="${id}-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="stats-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="${COLORS.bg}"/>
       <stop offset="100%" stop-color="${COLORS.bgLight}"/>
     </linearGradient>
   </defs>
   
-  <!-- Background glow -->
-  <rect x="0" y="0" width="480" height="280" rx="16" fill="none" stroke="url(#${id}-grad)" stroke-width="1" filter="url(#${id}-glow)" opacity="0.3">
-    <animate attributeName="opacity" values="0.3;0.1;0.3" dur="3s" repeatCount="indefinite"/>
+  <!-- Glow behind card -->
+  <rect x="0" y="0" width="480" height="280" rx="16" fill="none" stroke="url(#stats-grad)" stroke-width="1" filter="url(#stats-glow)" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.15;0.4" dur="3s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Card background -->
-  <rect x="2" y="2" width="476" height="276" rx="14" fill="url(#${id}-bg)" stroke="url(#${id}-grad)" stroke-width="2">
+  <rect x="2" y="2" width="476" height="276" rx="14" fill="url(#stats-bg)" stroke="url(#stats-grad)" stroke-width="2">
     <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Title -->
-  <text x="240" y="40" font-family="'Fira Code', monospace" font-size="20" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
+  <text x="240" y="38" font-family="'Fira Code', 'Cascadia Code', monospace" font-size="18" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
     GitHub Stats
     <animate attributeName="fill" values="${COLORS.secondary};${COLORS.accent};${COLORS.secondary}" dur="3s" repeatCount="indefinite"/>
   </text>
   
-  <!-- Stats grid -->
-  <!-- Row 1 -->
-  <g transform="translate(40, 70)">
-    <rect x="0" y="0" width="190" height="60" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
-    <text x="95" y="25" font-family="monospace" font-size="11" fill="${COLORS.textMuted}" text-anchor="middle">Repos</text>
-    <text x="95" y="48" font-family="monospace" font-size="24" fill="${COLORS.primary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
+  <!-- Divider line -->
+  <line x1="140" y1="48" x2="340" y2="48" stroke="url(#stats-grad)" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Row 1: Repos | Stars -->
+  <g transform="translate(30, 65)">
+    <rect x="0" y="0" width="200" height="55" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
+    <text x="100" y="20" font-family="monospace" font-size="10" fill="${COLORS.textMuted}" text-anchor="middle">REPOS</text>
+    <text x="100" y="45" font-family="monospace" font-size="26" fill="${COLORS.primary}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
       ${stats.repos}
       <animate attributeName="fill" values="${COLORS.primary};${COLORS.secondary};${COLORS.primary}" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>
   
-  <g transform="translate(250, 70)">
-    <rect x="0" y="0" width="190" height="60" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
-    <text x="95" y="25" font-family="monospace" font-size="11" fill="${COLORS.textMuted}" text-anchor="middle">Stars</text>
-    <text x="95" y="48" font-family="monospace" font-size="24" fill="${COLORS.accent}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
+  <g transform="translate(250, 65)">
+    <rect x="0" y="0" width="200" height="55" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
+    <text x="100" y="20" font-family="monospace" font-size="10" fill="${COLORS.textMuted}" text-anchor="middle">STARS</text>
+    <text x="100" y="45" font-family="monospace" font-size="26" fill="${COLORS.accent}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
       ${stats.stars}
       <animate attributeName="fill" values="${COLORS.accent};${COLORS.primary};${COLORS.accent}" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>
   
-  <!-- Row 2 -->
-  <g transform="translate(40, 140)">
-    <rect x="0" y="0" width="190" height="60" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
-    <text x="95" y="25" font-family="monospace" font-size="11" fill="${COLORS.textMuted}" text-anchor="middle">Followers</text>
-    <text x="95" y="48" font-family="monospace" font-size="24" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
+  <!-- Row 2: Followers | Following -->
+  <g transform="translate(30, 130)">
+    <rect x="0" y="0" width="200" height="55" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
+    <text x="100" y="20" font-family="monospace" font-size="10" fill="${COLORS.textMuted}" text-anchor="middle">FOLLOWERS</text>
+    <text x="100" y="45" font-family="monospace" font-size="26" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
       ${stats.followers}
     </text>
   </g>
   
-  <g transform="translate(250, 140)">
-    <rect x="0" y="0" width="190" height="60" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
-    <text x="95" y="25" font-family="monospace" font-size="11" fill="${COLORS.textMuted}" text-anchor="middle">Following</text>
-    <text x="95" y="48" font-family="monospace" font-size="24" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
+  <g transform="translate(250, 130)">
+    <rect x="0" y="0" width="200" height="55" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
+    <text x="100" y="20" font-family="monospace" font-size="10" fill="${COLORS.textMuted}" text-anchor="middle">FOLLOWING</text>
+    <text x="100" y="45" font-family="monospace" font-size="26" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
       ${stats.following}
     </text>
   </g>
   
-  <!-- Row 3 -->
-  <g transform="translate(40, 210)">
-    <rect x="0" y="0" width="190" height="60" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
-    <text x="95" y="25" font-family="monospace" font-size="11" fill="${COLORS.textMuted}" text-anchor="middle">Commits (Week)</text>
-    <text x="95" y="48" font-family="monospace" font-size="24" fill="${COLORS.primary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
+  <!-- Row 3: Commits | Languages -->
+  <g transform="translate(30, 195)">
+    <rect x="0" y="0" width="200" height="55" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
+    <text x="100" y="20" font-family="monospace" font-size="10" fill="${COLORS.textMuted}" text-anchor="middle">COMMITS</text>
+    <text x="100" y="45" font-family="monospace" font-size="26" fill="${COLORS.primary}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
       ${stats.commits}
       <animate attributeName="fill" values="${COLORS.primary};${COLORS.accent};${COLORS.primary}" dur="2s" repeatCount="indefinite"/>
     </text>
   </g>
   
-  <g transform="translate(250, 210)">
-    <rect x="0" y="0" width="190" height="60" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
-    <text x="95" y="25" font-family="monospace" font-size="11" fill="${COLORS.textMuted}" text-anchor="middle">Forks</text>
-    <text x="95" y="48" font-family="monospace" font-size="24" fill="${COLORS.accent}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
-      ${stats.forks}
+  <g transform="translate(250, 195)">
+    <rect x="0" y="0" width="200" height="55" rx="8" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="1"/>
+    <text x="100" y="20" font-family="monospace" font-size="10" fill="${COLORS.textMuted}" text-anchor="middle">LANGUAGES</text>
+    <text x="100" y="45" font-family="monospace" font-size="26" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#stats-glow)">
+      ${stats.languages}
     </text>
   </g>
   
@@ -182,98 +183,24 @@ function generateStatsCard(stats) {
     <animate attributeName="cy" values="270;20" dur="8s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0;0.4;0" dur="8s" repeatCount="indefinite"/>
   </circle>
-</svg>`;
-}
-
-function generateLanguagesCard() {
-  const id = 'langs';
-  
-  // Simulated language distribution (will be updated by actual API data)
-  const languages = [
-    { name: 'TypeScript', percent: 35, color: '#3178C6' },
-    { name: 'JavaScript', percent: 25, color: '#F7DF1E' },
-    { name: 'Python', percent: 20, color: '#3776AB' },
-    { name: 'Kotlin', percent: 12, color: '#7F52FF' },
-    { name: 'Java', percent: 8, color: '#ED8B00' }
-  ];
-  
-  const barWidth = 380;
-  const barHeight = 20;
-  const startY = 80;
-  
-  let bars = '';
-  let labels = '';
-  let currentX = 50;
-  
-  languages.forEach((lang, i) => {
-    const width = (barWidth * lang.percent) / 100;
-    const delay = i * 0.3;
-    
-    bars += `
-    <rect x="${currentX}" y="${startY}" width="${width}" height="${barHeight}" rx="4" fill="${lang.color}" opacity="0.8">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" begin="${delay}s" repeatCount="indefinite"/>
-    </rect>`;
-    
-    labels += `
-    <circle cx="${currentX + 8}" cy="${startY + 45}" r="5" fill="${lang.color}"/>
-    <text x="${currentX + 18}" y="${startY + 50}" font-family="monospace" font-size="10" fill="${COLORS.text}">${lang.name} ${lang.percent}%</text>`;
-    
-    currentX += width;
-  });
-  
-  return `<svg width="480" height="160" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="${id}-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="${COLORS.primary}">
-        <animate attributeName="stop-color" values="${COLORS.primary};${COLORS.secondary};${COLORS.accent};${COLORS.primary}" dur="4s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="${COLORS.secondary}"/>
-      <stop offset="100%" stop-color="${COLORS.accent}"/>
-    </linearGradient>
-    
-    <filter id="${id}-glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="blur"/>
-      <feFlood flood-color="${COLORS.secondary}" flood-opacity="0.3" result="color"/>
-      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
-      <feMerge>
-        <feMergeNode in="shadow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <!-- Background -->
-  <rect x="2" y="2" width="476" height="156" rx="14" fill="${COLORS.bg}" stroke="url(#${id}-grad)" stroke-width="2">
-    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-  </rect>
-  
-  <!-- Title -->
-  <text x="240" y="35" font-family="'Fira Code', monospace" font-size="16" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
-    Top Languages
-    <animate attributeName="fill" values="${COLORS.secondary};${COLORS.accent};${COLORS.secondary}" dur="3s" repeatCount="indefinite"/>
-  </text>
-  
-  <!-- Language bar -->
-  ${bars}
-  
-  <!-- Language labels -->
-  ${labels}
+  <circle cx="240" cy="280" r="2" fill="${COLORS.accent}" opacity="0">
+    <animate attributeName="cy" values="290;5" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
 </svg>`;
 }
 
 function generateStreakCard(stats) {
-  const id = 'streak';
-  
-  return `<svg width="480" height="120" xmlns="http://www.w3.org/2000/svg">
+  return `<svg width="235" height="140" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="${id}-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="streak-grad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="${COLORS.primary}">
         <animate attributeName="stop-color" values="${COLORS.primary};${COLORS.secondary};${COLORS.accent};${COLORS.primary}" dur="4s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="${COLORS.accent}"/>
     </linearGradient>
     
-    <filter id="${id}-glow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="streak-glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="2" result="blur"/>
       <feFlood flood-color="${COLORS.primary}" flood-opacity="0.4" result="color"/>
       <feComposite in="color" in2="blur" operator="in" result="shadow"/>
@@ -285,30 +212,132 @@ function generateStreakCard(stats) {
   </defs>
   
   <!-- Background -->
-  <rect x="2" y="2" width="476" height="116" rx="14" fill="${COLORS.bg}" stroke="url(#${id}-grad)" stroke-width="2">
+  <rect x="2" y="2" width="231" height="136" rx="12" fill="${COLORS.bg}" stroke="url(#streak-grad)" stroke-width="2">
     <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
   </rect>
   
   <!-- Title -->
-  <text x="240" y="30" font-family="'Fira Code', monospace" font-size="14" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#${id}-glow)">
-    Contribution Streak
+  <text x="117" y="24" font-family="'Fira Code', monospace" font-size="11" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
+    Streak
   </text>
   
-  <!-- Streak stats -->
-  <g transform="translate(40, 50)">
-    <text x="0" y="15" font-family="monospace" font-size="10" fill="${COLORS.textMuted}">Current Streak</text>
-    <text x="0" y="40" font-family="monospace" font-size="28" fill="${COLORS.primary}" font-weight="bold" filter="url(#${id}-glow)">
-      ${stats.commits} days
-      <animate attributeName="fill" values="${COLORS.primary};${COLORS.accent};${COLORS.primary}" dur="2s" repeatCount="indefinite"/>
-    </text>
-  </g>
+  <!-- Divider -->
+  <line x1="50" y1="32" x2="185" y2="32" stroke="url(#streak-grad)" stroke-width="0.5" opacity="0.5"/>
   
-  <g transform="translate(280, 50)">
-    <text x="0" y="15" font-family="monospace" font-size="10" fill="${COLORS.textMuted}">Longest Streak</text>
-    <text x="0" y="40" font-family="monospace" font-size="28" fill="${COLORS.accent}" font-weight="bold" filter="url(#${id}-glow)">
-      ${stats.commits + 5} days
-    </text>
-  </g>
+  <!-- Current Streak -->
+  <text x="117" y="55" font-family="monospace" font-size="8" fill="${COLORS.textMuted}" text-anchor="middle">CURRENT</text>
+  <text x="117" y="80" font-family="monospace" font-size="22" fill="${COLORS.primary}" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
+    ${stats.commits}
+    <animate attributeName="fill" values="${COLORS.primary};${COLORS.accent};${COLORS.primary}" dur="2s" repeatCount="indefinite"/>
+  </text>
+  
+  <!-- Longest Streak -->
+  <text x="117" y="100" font-family="monospace" font-size="8" fill="${COLORS.textMuted}" text-anchor="middle">LONGEST</text>
+  <text x="117" y="122" font-family="monospace" font-size="18" fill="${COLORS.accent}" text-anchor="middle" font-weight="bold" filter="url(#streak-glow)">
+    ${stats.commits + 5}
+  </text>
+  
+  <!-- Corner accents -->
+  <path d="M 12 30 L 12 16 Q 12 12 16 12 L 30 12" fill="none" stroke="${COLORS.primary}" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="stroke" values="${COLORS.primary};${COLORS.secondary};${COLORS.primary}" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 223 30 L 223 16 Q 223 12 219 12 L 205 12" fill="none" stroke="${COLORS.secondary}" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 12 110 L 12 124 Q 12 128 16 128 L 30 128" fill="none" stroke="${COLORS.accent}" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 223 110 L 223 124 Q 223 128 219 128 L 205 128" fill="none" stroke="${COLORS.primary}" stroke-width="1.5" opacity="0.5"/>
+</svg>`;
+}
+
+function generateLanguagesCard() {
+  const languages = [
+    { name: 'TypeScript', percent: 35, color: '#3178C6', icon: 'TS' },
+    { name: 'JavaScript', percent: 25, color: '#F7DF1E', icon: 'JS' },
+    { name: 'Python', percent: 20, color: '#3776AB', icon: 'PY' },
+    { name: 'Kotlin', percent: 12, color: '#7F52FF', icon: 'KT' },
+    { name: 'Java', percent: 8, color: '#ED8B00', icon: 'JV' }
+  ];
+  
+  const barStartY = 45;
+  const barHeight = 12;
+  const barGap = 18;
+  
+  let bars = '';
+  languages.forEach((lang, i) => {
+    const y = barStartY + (i * barGap);
+    const maxWidth = 160;
+    const width = (maxWidth * lang.percent) / 100;
+    const delay = i * 0.2;
+    
+    // Background bar
+    bars += `
+    <rect x="65" y="${y}" width="${maxWidth}" height="${barHeight}" rx="6" fill="${COLORS.bg}" stroke="${COLORS.border}" stroke-width="0.5"/>`;
+    
+    // Filled bar with animation
+    bars += `
+    <rect x="65" y="${y}" width="0" height="${barHeight}" rx="6" fill="${lang.color}" opacity="0.85">
+      <animate attributeName="width" from="0" to="${width}" dur="1s" begin="${delay}s" fill="freeze"/>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2s" begin="${delay}s" repeatCount="indefinite"/>
+    </rect>`;
+    
+    // Glow effect on bar
+    bars += `
+    <rect x="65" y="${y}" width="0" height="${barHeight}" rx="6" fill="none" stroke="${lang.color}" stroke-width="1" opacity="0.4">
+      <animate attributeName="width" from="0" to="${width}" dur="1s" begin="${delay}s" fill="freeze"/>
+    </rect>`;
+    
+    // Language icon badge
+    bars += `
+    <rect x="10" y="${y - 1}" width="45" height="${barHeight + 2}" rx="4" fill="${lang.color}" opacity="0.2"/>
+    <text x="32" y="${y + 9}" font-family="monospace" font-size="8" fill="${lang.color}" text-anchor="middle" font-weight="bold">${lang.icon}</text>`;
+    
+    // Percentage label
+    bars += `
+    <text x="230" y="${y + 9}" font-family="monospace" font-size="8" fill="${COLORS.textMuted}" text-anchor="end">${lang.percent}%</text>`;
+  });
+  
+  return `<svg width="235" height="140" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="langs-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="${COLORS.primary}">
+        <animate attributeName="stop-color" values="${COLORS.primary};${COLORS.secondary};${COLORS.accent};${COLORS.primary}" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="${COLORS.secondary}"/>
+      <stop offset="100%" stop-color="${COLORS.accent}"/>
+    </linearGradient>
+    
+    <filter id="langs-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="${COLORS.secondary}" flood-opacity="0.3" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="2" y="2" width="231" height="136" rx="12" fill="${COLORS.bg}" stroke="url(#langs-grad)" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Title -->
+  <text x="117" y="24" font-family="'Fira Code', monospace" font-size="11" fill="${COLORS.secondary}" text-anchor="middle" font-weight="bold" filter="url(#langs-glow)">
+    Top Languages
+  </text>
+  
+  <!-- Divider -->
+  <line x1="50" y1="32" x2="185" y2="32" stroke="url(#langs-grad)" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Language bars -->
+  ${bars}
+  
+  <!-- Corner accents -->
+  <path d="M 12 30 L 12 16 Q 12 12 16 12 L 30 12" fill="none" stroke="${COLORS.primary}" stroke-width="1.5" opacity="0.5">
+    <animate attributeName="stroke" values="${COLORS.primary};${COLORS.secondary};${COLORS.primary}" dur="3s" repeatCount="indefinite"/>
+  </path>
+  <path d="M 223 30 L 223 16 Q 223 12 219 12 L 205 12" fill="none" stroke="${COLORS.secondary}" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 12 110 L 12 124 Q 12 128 16 128 L 30 128" fill="none" stroke="${COLORS.accent}" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 223 110 L 223 124 Q 223 128 219 128 L 205 128" fill="none" stroke="${COLORS.primary}" stroke-width="1.5" opacity="0.5"/>
 </svg>`;
 }
 
@@ -323,17 +352,17 @@ async function main() {
       fs.mkdirSync(outputDir, { recursive: true });
     }
     
-    console.log('Generating stats card...');
+    console.log('Generating stats card (480x280)...');
     const statsCard = generateStatsCard(stats);
     fs.writeFileSync(path.join(outputDir, 'stats.svg'), statsCard, 'utf8');
     
-    console.log('Generating languages card...');
-    const langsCard = generateLanguagesCard();
-    fs.writeFileSync(path.join(outputDir, 'languages.svg'), langsCard, 'utf8');
-    
-    console.log('Generating streak card...');
+    console.log('Generating streak card (235x140)...');
     const streakCard = generateStreakCard(stats);
     fs.writeFileSync(path.join(outputDir, 'streak.svg'), streakCard, 'utf8');
+    
+    console.log('Generating languages card (235x140)...');
+    const langsCard = generateLanguagesCard();
+    fs.writeFileSync(path.join(outputDir, 'languages.svg'), langsCard, 'utf8');
     
     console.log('All stats cards generated successfully!');
   } catch (error) {

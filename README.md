@@ -92,21 +92,21 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 
 ## GitHub Stats
 
-<div align="center">
-
-<!-- Stats Card (auto-generated) -->
+<table align="center">
+<tr>
+<td colspan="2" align="center">
 <img src="metrics/stats.svg" width="480" />
-
-<!-- Streak Card (auto-generated) -->
-<img src="metrics/streak.svg" width="480" />
-
-<!-- Languages Card (auto-generated) -->
-<img src="metrics/languages.svg" width="480" />
-
-<!-- Lowlighter Metrics (classic template) -->
-<img src="metrics/classic.svg" width="100%" />
-
-</div>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="metrics/streak.svg" width="235" />
+</td>
+<td align="center">
+<img src="metrics/languages.svg" width="235" />
+</td>
+</tr>
+</table>
 
 <br/>
 

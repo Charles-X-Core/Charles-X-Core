@@ -134,6 +134,18 @@ A software developer passionate about **artificial intelligence**, **automation*
 
 ---
 
+## ⏱️ CODING ACTIVITY (TAKATIME)
+
+<div align="center">
+
+![TakaTime](metrics/takatime.svg)
+
+</div>
+
+<br/>
+
+---
+
 ## 🐍 CONTRIBUTION SNAKE (CYBERPUNK LAVA)
 
 <div align="center">

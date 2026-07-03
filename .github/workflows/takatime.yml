@@ -1,0 +1,41 @@
+name: TakaTime Stats
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download TakaTime Report
+        run: |
+          gh release download --repo Rtarun3606k/TakaTime --pattern "taka-report-linux-amd64" --output taka-report
+          chmod +x taka-report
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Generate Stats
+        run: |
+          ./taka-report \
+            --uri "${{ secrets.MONGO_URI }}" \
+            --theme cyberpunk \
+            --days 7 \
+            --output metrics/takatime.svg
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
+
+      - name: Commit and Push
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add metrics/takatime.svg
+          git diff --staged --quiet || git commit -m "chore: update takatime stats [skip ci]"
+          git push

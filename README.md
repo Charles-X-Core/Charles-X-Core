@@ -227,19 +227,6 @@ A software developer passionate about **artificial intelligence**, **automation*
 
 ---
 
-## 📊 CODING ACTIVITY
-
-<div align="center">
-
-<!-- WakaTime Badge (configurar con tu API key) -->
-[![wakatime](https://wakatime.com/badge/user/TU_USERNAME.svg)](https://wakatime.com/@TU_USERNAME)
-
-</div>
-
-<br/>
-
----
-
 ## 🎯 GITHUB ACHIEVEMENTS
 
 <div align="center">

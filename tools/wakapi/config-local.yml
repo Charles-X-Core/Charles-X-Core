@@ -1,0 +1,43 @@
+env: production
+quick_start: false
+skip_migrations: false
+
+server:
+  listen_ipv4: 127.0.0.1
+  listen_ipv6: ::1
+  port: 3000
+  base_path: /
+  public_url: http://localhost:3000
+  log_format: text
+  timeout_sec: 30
+
+app:
+  leaderboard_enabled: false
+  aggregation_time: '0 15 2 * * *'
+  inactive_days: 7
+  import_enabled: true
+  heartbeat_max_age: '4320h'
+  data_retention_months: -1
+  warm_caches: true
+  custom_languages:
+    vue: Vue
+    jsx: JSX
+    tsx: TSX
+    cjs: JavaScript
+    ipynb: Python
+    svelte: Svelte
+    astro: Astro
+
+db:
+  name: data/wakapi.db
+  dialect: sqlite3
+  max_conn: 10
+
+security:
+  password_salt: charles-x-cyberpunk-2026
+  insecure_cookies: true
+  allow_signup: true
+  disable_webauthn: true
+
+mail:
+  enabled: false

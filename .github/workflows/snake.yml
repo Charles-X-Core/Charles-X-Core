@@ -22,8 +22,8 @@ jobs:
         with:
           github_user_name: Charles-X-Core
           outputs: |
-            dist/github-contribution-grid-snake-dark.svg?color_snake=lava_red&color_dots=FF4444,FF6B35,FFA500,FF4444,FF6B35
-            dist/github-contribution-grid-snake.svg?color_snake=lava_red&color_dots=FF4444,FF6B35,FFA500,FF4444,FF6B35
+            dist/github-contribution-grid-snake-dark.svg?color_snake=FF4444&color_dots=0a0a0f,FF4444,FF6B35,FFA500,FF6B35,FF4444
+            dist/github-contribution-grid-snake.svg?color_snake=FF4444&color_dots=0a0a0f,FF4444,FF6B35,FFA500,FF6B35,FF4444
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

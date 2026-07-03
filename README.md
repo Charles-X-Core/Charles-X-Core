@@ -117,24 +117,15 @@ A software developer passionate about **artificial intelligence**, **automation*
 <table align="center">
 <tr>
 <td colspan="2" align="center">
-
-<!-- Stats Card - Cyberpunk Theme -->
-<img src="https://github-readme-stats.vercel.app/api?username=Charles-X-Core&show_icons=true&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35&hide_border=true&include_all_commits=true&count_private=true" width="100%" />
-
+<img src="metrics/stats.svg" width="600" />
 </td>
 </tr>
 <tr>
 <td align="center">
-
-<!-- Streak Stats -->
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Charles-X-Core&theme=radical&background=0a0a0f&border=FF4444&ring=FF4444&fire=FF6B35&currStreakLabel=FFA500&sideLabels=ffffff&currStreakNum=ffffff&sideNums=ffffff" width="400" />
-
+<img src="metrics/streak.svg" width="295" />
 </td>
 <td align="center">
-
-<!-- Top Languages -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Charles-X-Core&layout=compact&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&langs_count=8&hide=html,css" width="400" />
-
+<img src="metrics/languages.svg" width="295" />
 </td>
 </tr>
 </table>
@@ -188,38 +179,16 @@ A software developer passionate about **artificial intelligence**, **automation*
 
 <table align="center">
 <tr>
-<td align="center" width="30%">
-
-[![farmacia-inventario](https://github-readme-stats.vercel.app/api/pin/?username=Charles-X-Core&repo=farmacia-inventario&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35)](https://github.com/Charles-X-Core/farmacia-inventario)
-
-</td>
-<td align="center" width="30%">
-
-[![odontologia-sistema](https://github-readme-stats.vercel.app/api/pin/?username=Charles-X-Core&repo=odontologia-sistema&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35)](https://github.com/Charles-X-Core/odontologia-sistema)
-
-</td>
-<td align="center" width="30%">
-
-[![FakeLove-PDF-Tools](https://github-readme-stats.vercel.app/api/pin/?username=Charles-X-Core&repo=FakeLove-PDF-Tools&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35)](https://github.com/Charles-X-Core/FakeLove-PDF-Tools)
-
-</td>
+<td align="center"><img src=".github/generated/project-0.svg" alt="odontologia-sistema" width="480" /></td>
+<td align="center"><img src=".github/generated/project-1.svg" alt="Gunners-Revengers-" width="480" /></td>
 </tr>
 <tr>
-<td align="center">
-
-[![GunnersRunners](https://github-readme-stats.vercel.app/api/pin/?username=Charles-X-Core&repo=GunnersRunners&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35)](https://github.com/Charles-X-Core/GunnersRunners)
-
-</td>
-<td align="center">
-
-[![trackPays](https://github-readme-stats.vercel.app/api/pin/?username=Charles-X-Core&repo=trackPays&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35)](https://github.com/Charles-X-Core/trackPays)
-
-</td>
-<td align="center">
-
-[![azure-projects-charles](https://github-readme-stats.vercel.app/api/pin/?username=Charles-X-Core&repo=azure-projects-charles&theme=radical&bg_color=0a0a0f&border_color=FF4444&title_color=FF4444&text_color=ffffff&icon_color=FF6B35)](https://github.com/Charles-X-Core/azure-projects-charles)
-
-</td>
+<td align="center"><img src=".github/generated/project-2.svg" alt="GunnersRunners" width="480" /></td>
+<td align="center"><img src=".github/generated/project-3.svg" alt="trackPays" width="480" /></td>
+</tr>
+<tr>
+<td align="center"><img src=".github/generated/project-4.svg" alt="FakeLove-PDF-Tools" width="480" /></td>
+<td align="center"><img src=".github/generated/project-5.svg" alt="packet-tracer-mcp-mitm" width="480" /></td>
 </tr>
 </table>
 

@@ -147,7 +147,7 @@ A software developer passionate about **artificial intelligence**, **automation*
 
 <div align="center">
 
-![Snake animation](https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/output/github-contribution-grid-snake-dark.svg)
+![Snake animation](https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 

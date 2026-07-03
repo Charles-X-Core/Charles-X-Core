@@ -1,0 +1,34 @@
+name: Generate Snake Animation
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'  # Cada 12 horas
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate-snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: Charles-X-Core
+          outputs: |
+            dist/github-contribution-grid-snake-dark.svg?color_snake=lava_red&color_dots=FF4444,FF6B35,FFA500,FF4444,FF6B35
+            dist/github-contribution-grid-snake.svg?color_snake=lava_red&color_dots=FF4444,FF6B35,FFA500,FF4444,FF6B35
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: dist
+          destination_dir: output
+          keep_files: true

@@ -29,7 +29,7 @@ app:
     astro: Astro
 
 db:
-  name: data/wakapi.db
+  name: C:\Users\Administrator\Desktop\github\charles-profile\tools\wakapi\data\wakapi.db
   dialect: sqlite3
   max_conn: 10
 

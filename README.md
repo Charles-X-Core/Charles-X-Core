@@ -118,7 +118,7 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![Repos](https://img.shields.io/badge/Repos-31+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
+| ![Repos](https://img.shields.io/badge/Repos-32+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
 
 | | | | |
 |:---:|:---:|:---:|:---:|

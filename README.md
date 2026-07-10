@@ -146,8 +146,8 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 <td align="center"><img src=".github/generated/project-1.svg" alt="Gunners-Revengers-" width="480" /></td>
 </tr>
 <tr>
-<td align="center"><img src=".github/generated/project-2.svg" alt="trackPays" width="480" /></td>
-<td align="center"><img src=".github/generated/project-3.svg" alt="Charles-X-Core" width="480" /></td>
+<td align="center"><img src=".github/generated/project-2.svg" alt="Charles-X-Core" width="480" /></td>
+<td align="center"><img src=".github/generated/project-3.svg" alt="trackPays" width="480" /></td>
 </tr>
 <tr>
 <td align="center"><img src=".github/generated/project-4.svg" alt="TubeToAlbum" width="480" /></td>

@@ -32,3 +32,5 @@ jobs:
           publish_dir: dist
           destination_dir: output
           keep_files: true
+          user_name: 'Charles-X-Core'
+          user_email: 'alonsopicho@gmail.com'

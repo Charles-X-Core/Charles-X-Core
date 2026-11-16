@@ -303,8 +303,30 @@ async function getProfileData() {
   };
 }
 
+const CYBER_INTEL = [
+  "Implement strict CSP headers (default-src 'none') to neutralize DOM-based and stored XSS vectors.",
+  "Zero-shot chain-of-thought with tool introspection enhances autonomous coding agent reliability.",
+  "Segment IoT microcontroller nodes on isolated VLANs with strict firewall ACLs to mitigate ARP spoofing.",
+  "Leverage eBPF kernel probes for real-time socket observability without intrusive binary instrumentation.",
+  "Enforce ephemeral tokens and strict rotation for CI/CD runners to prevent secret exfiltration.",
+  "Prefer immutable append-only ledgers and idempotent endpoints when building distributed SaaS architectures.",
+  "Model Context Protocol (MCP) standardizes AI tool interaction across isolated execution sandboxes.",
+  "Sanitize SVG uploads and disallow embedded foreignObject/script tags to prevent persistent XSS execution."
+];
+
+function getCyberIntel() {
+  const now = new Date();
+  const startOfYear = new Date(now.getFullYear(), 0, 1);
+  const dayOfYear = Math.floor((now - startOfYear) / (1000 * 60 * 60 * 24));
+  const tip = CYBER_INTEL[dayOfYear % CYBER_INTEL.length];
+  const pad = n => String(n).padStart(2, '0');
+  const dateStr = `${now.getUTCFullYear()}-${pad(now.getUTCMonth() + 1)}-${pad(now.getUTCDate())} ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())} UTC`;
+  return { tip, dateStr };
+}
+
 function generateReadme(data) {
   const { user, totalRepos, totalStars, totalForks, recentRepos } = data;
+  const intel = getCyberIntel();
 
   const projectsSection = generateProjectsSection(recentRepos);
 
@@ -330,6 +352,22 @@ function generateReadme(data) {
 <a href="https://github.com/Charles-X-Core" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
 <a href="mailto:alonsopicho@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </div>
+
+<br/>
+
+---
+
+## ⚡ Terminal & System Intel
+
+\`\`\`bash
+┌──(charles-x㉿core)-[~]
+└─$ core-intel --status --telemetry
+[⚡] NODE STATUS      : OPERATIONAL | Lima, PE (America/Lima)
+[🧠] RESEARCH FOCUS   : AI Agent Architectures, Network Automation & Distributed SaaS
+[🛡️] CYBER INTEL      : "${intel.tip}"
+[🚀] ACTIVE STACK     : Java 21 / Spring Boot 3.2 • Next.js 14 / TypeScript • Python
+[🔄] LAST TELEMETRY   : ${intel.dateStr}
+\`\`\`
 
 <br/>
 

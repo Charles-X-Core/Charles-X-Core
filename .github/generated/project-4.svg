@@ -49,7 +49,7 @@
   </rect>
 
   <!-- Project screenshot -->
-  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/packet-tracer-mcp-mitm" x="16" y="16" width="200" height="130" clip-path="url(#proj-4-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
+  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/TubeToAlbum" x="16" y="16" width="200" height="130" clip-path="url(#proj-4-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
 
   <!-- Screenshot overlay gradient -->
   <rect x="16" y="16" width="200" height="130" rx="12" fill="url(#proj-4-bg)" opacity="0.3"/>
@@ -63,14 +63,14 @@
   <!-- Project icon (Lucide) -->
   <g transform="translate(236, 24)" stroke="#3776AB" fill="none" stroke-width="1.5" filter="url(#proj-4-neon)">
     <g transform="scale(0.9)">
-      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/>
+      <path d="m18 16 4-4-4-4"/><path d="m6 8-4 4 4 4"/><path d="m14.5 4-5 16"/>
       <animate attributeName="stroke" values="#3776AB;#FFA500;#3776AB" dur="3s" begin="2s" repeatCount="indefinite"/>
     </g>
   </g>
 
   <!-- Project name -->
   <text x="264" y="44" font-family="'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace" font-size="16" fill="#FF6B35" font-weight="bold" filter="url(#proj-4-neon)">
-    packet-tracer-mcp-mitm
+    TubeToAlbum
     <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" begin="2s" repeatCount="indefinite"/>
   </text>
 
@@ -99,12 +99,12 @@
 
   <!-- Description -->
   <text x="264" y="130" font-family="monospace" font-size="10" fill="#888888">
-    Automatizacion de redes Cisco con MCP y 
-    <tspan x="264" dy="14">laboratorio de seguridad MITM</tspan>
+    Descargador profesional YouTube a MP3/MP
+    <tspan x="264" dy="14">4 con portada HD, iconos inteligentes, h</tspan>
   </text>
 
   <!-- View Code button -->
-  <a href="https://github.com/Charles-X-Core/packet-tracer-mcp-mitm" target="_blank">
+  <a href="https://github.com/Charles-X-Core/TubeToAlbum" target="_blank">
     <g transform="translate(264, 170)">
       <rect x="0" y="0" width="90" height="30" rx="15" fill="none" stroke="#FF4444" stroke-width="1.5">
         <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="2s" begin="2s" repeatCount="indefinite"/>

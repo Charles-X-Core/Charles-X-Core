@@ -49,7 +49,7 @@
   </rect>
 
   <!-- Project screenshot -->
-  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/GunnersRunners" x="16" y="16" width="200" height="130" clip-path="url(#proj-2-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
+  <image href="https://opengraph.githubassets.com/1/Charles-X-Core/farmacia-inventario" x="16" y="16" width="200" height="130" clip-path="url(#proj-2-clip)" preserveAspectRatio="xMidYMid slice" opacity="0.85"/>
 
   <!-- Screenshot overlay gradient -->
   <rect x="16" y="16" width="200" height="130" rx="12" fill="url(#proj-2-bg)" opacity="0.3"/>
@@ -70,15 +70,15 @@
 
   <!-- Project name -->
   <text x="264" y="44" font-family="'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace" font-size="16" fill="#FF6B35" font-weight="bold" filter="url(#proj-2-neon)">
-    GunnersRunners
+    farmacia-inventario
     <animate attributeName="fill" values="#FF6B35;#FFA500;#FF6B35" dur="3s" begin="1s" repeatCount="indefinite"/>
   </text>
 
   <!-- Language badge -->
-  <rect x="264" y="56" width="176" height="22" rx="11" fill="#8B5CF6" opacity="0.25"/>
-  <rect x="264" y="56" width="176" height="22" rx="11" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.6"/>
+  <rect x="264" y="56" width="64" height="22" rx="11" fill="#8B5CF6" opacity="0.25"/>
+  <rect x="264" y="56" width="64" height="22" rx="11" fill="none" stroke="#8B5CF6" stroke-width="1" opacity="0.6"/>
   <circle cx="278" cy="67" r="4" fill="#8B5CF6"/>
-  <text x="288" y="72" font-family="monospace" font-size="10" fill="#8B5CF6">Game Maker Language</text>
+  <text x="288" y="72" font-family="monospace" font-size="10" fill="#8B5CF6">Blade</text>
 
   <!-- Star icon (Lucide) -->
   <g transform="translate(264, 90)" stroke="#FFA500" fill="none" stroke-width="1.5">
@@ -99,12 +99,12 @@
 
   <!-- Description -->
   <text x="264" y="130" font-family="monospace" font-size="10" fill="#888888">
-    Gunners Runners - Rhythm-based shmup bui
-    <tspan x="264" dy="14">lt with GameMaker LTS 2026</tspan>
+    Sistema de inventario para farmacia - La
+    <tspan x="264" dy="14">ravel 12 - Capstone</tspan>
   </text>
 
   <!-- View Code button -->
-  <a href="https://github.com/Charles-X-Core/GunnersRunners" target="_blank">
+  <a href="https://github.com/Charles-X-Core/farmacia-inventario" target="_blank">
     <g transform="translate(264, 170)">
       <rect x="0" y="0" width="90" height="30" rx="15" fill="none" stroke="#FF4444" stroke-width="1.5">
         <animate attributeName="stroke" values="#FF4444;#FF6B35;#FF4444" dur="2s" begin="1s" repeatCount="indefinite"/>

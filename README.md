@@ -18,7 +18,7 @@
 <a href="https://www.linkedin.com/in/carlos-alonso-picho-vargas-87738213b/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://capv-portfolio.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF4444?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 <a href="https://github.com/Charles-X-Core" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="mailto:carlos@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="mailto:alonsopicho@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </div>
 
 <br/>
@@ -118,7 +118,7 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 
 | | | | |
 |:---:|:---:|:---:|:---:|
-| ![Repos](https://img.shields.io/badge/Repos-36+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
+| ![Repos](https://img.shields.io/badge/Repos-35+-FF4444?style=for-the-badge&logo=github&logoColor=white) | ![Stars](https://img.shields.io/badge/Stars-2-gold?style=for-the-badge&logo=github&logoColor=white) | ![Forks](https://img.shields.io/badge/Forks-0-blue?style=for-the-badge&logo=github&logoColor=white) | ![Follow](https://img.shields.io/badge/Follow-@Charles--X--Core-brightgreen?style=for-the-badge&logo=github&logoColor=white) |
 
 | | | | |
 |:---:|:---:|:---:|:---:|
@@ -142,16 +142,16 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 
 <table align="center">
 <tr>
-<td align="center"><img src=".github/generated/project-0.svg" alt="odontologia-sistema" width="480" /></td>
-<td align="center"><img src=".github/generated/project-1.svg" alt="Gunners-Revengers-" width="480" /></td>
+<td align="center"><a href="https://github.com/Charles-X-Core/odontologia-sistema" target="_blank"><img src=".github/generated/project-0.svg" alt="odontologia-sistema" width="480" /></a></td>
+<td align="center"><a href="https://github.com/Charles-X-Core/Gunners-Revengers-" target="_blank"><img src=".github/generated/project-1.svg" alt="Gunners-Revengers-" width="480" /></a></td>
 </tr>
 <tr>
-<td align="center"><img src=".github/generated/project-2.svg" alt="Charles-X-Core" width="480" /></td>
-<td align="center"><img src=".github/generated/project-3.svg" alt="farmacia-inventario" width="480" /></td>
+<td align="center"><a href="https://github.com/Charles-X-Core/farmacia-inventario" target="_blank"><img src=".github/generated/project-2.svg" alt="farmacia-inventario" width="480" /></a></td>
+<td align="center"><a href="https://github.com/Charles-X-Core/medical-erp" target="_blank"><img src=".github/generated/project-3.svg" alt="medical-erp" width="480" /></a></td>
 </tr>
 <tr>
-<td align="center"><img src=".github/generated/project-4.svg" alt="medical-erp" width="480" /></td>
-<td align="center"><img src=".github/generated/project-5.svg" alt="TubeToAlbum" width="480" /></td>
+<td align="center"><a href="https://github.com/Charles-X-Core/TubeToAlbum" target="_blank"><img src=".github/generated/project-4.svg" alt="TubeToAlbum" width="480" /></a></td>
+<td align="center"><a href="https://github.com/Charles-X-Core/Track-Pays" target="_blank"><img src=".github/generated/project-5.svg" alt="Track-Pays" width="480" /></a></td>
 </tr>
 </table>
 
@@ -167,6 +167,16 @@ I'm **Carlos Alonso Picho Vargas**, known as **CHARLES-X**. A software developer
 <a href="https://github.com/Charles-X-Core">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Charles-X-Core&bg_color=0a0a0f&color=ff4444&line=ff6b35&point=ffa500&area=true&area_color=ff4444&hide_border=true" width="100%" />
 </a>
+</div>
+
+<br/>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</picture>
 </div>
 
 <br/>

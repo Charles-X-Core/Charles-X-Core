@@ -243,7 +243,7 @@ function generateProjectsSection(repos) {
     const svgContent = generateProjectSVG(repo, i);
     const svgPath = path.join(generatedDir, `project-${i}.svg`);
     fs.writeFileSync(svgPath, svgContent, 'utf8');
-    svgImages.push(`<img src=".github/generated/project-${i}.svg" alt="${repo.name}" width="480" />`);
+    svgImages.push(`<a href="${repo.html_url}" target="_blank"><img src=".github/generated/project-${i}.svg" alt="${repo.name}" width="480" /></a>`);
   });
 
   // Create 2-column layout using HTML table
@@ -267,7 +267,11 @@ ${tableRows}</table>
 }
 
 async function fetchJSON(url) {
-  const res = await fetch(url);
+  const headers = { 'User-Agent': 'Profile-Updater' };
+  if (process.env.GITHUB_TOKEN) {
+    headers['Authorization'] = `token ${process.env.GITHUB_TOKEN}`;
+  }
+  const res = await fetch(url, { headers });
   if (!res.ok) throw new Error(`Failed: ${url}`);
   return res.json();
 }
@@ -276,7 +280,7 @@ async function getProfileData() {
   const user = await fetchJSON(`https://api.github.com/users/${USERNAME}`);
   const repos = await fetchJSON(`https://api.github.com/users/${USERNAME}/repos?per_page=100&sort=updated`);
 
-  const ownedRepos = repos.filter(r => !r.fork);
+  const ownedRepos = repos.filter(r => !r.fork && r.name.toLowerCase() !== USERNAME.toLowerCase());
   const totalStars = ownedRepos.reduce((sum, r) => sum + r.stargazers_count, 0);
   const totalForks = ownedRepos.reduce((sum, r) => sum + r.forks_count, 0);
 
@@ -324,7 +328,7 @@ function generateReadme(data) {
 <a href="https://www.linkedin.com/in/carlos-alonso-picho-vargas-87738213b/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="https://capv-portfolio.vercel.app/" target="_blank"><img src="https://img.shields.io/badge/Portfolio-FF4444?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
 <a href="https://github.com/Charles-X-Core" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a href="mailto:carlos@example.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
+<a href="mailto:alonsopicho@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
 </div>
 
 <br/>
@@ -452,6 +456,16 @@ ${projectsSection}
 <a href="https://github.com/Charles-X-Core">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Charles-X-Core&bg_color=0a0a0f&color=ff4444&line=ff6b35&point=ffa500&area=true&area_color=ff4444&hide_border=true" width="100%" />
 </a>
+</div>
+
+<br/>
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Charles-X-Core/Charles-X-Core/gh-pages/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</picture>
 </div>
 
 <br/>

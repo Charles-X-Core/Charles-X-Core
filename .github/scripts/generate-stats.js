@@ -16,7 +16,11 @@ const COLORS = {
 };
 
 async function fetchJSON(url) {
-  const res = await fetch(url);
+  const headers = { 'User-Agent': 'Profile-Updater' };
+  if (process.env.GITHUB_TOKEN) {
+    headers['Authorization'] = `token ${process.env.GITHUB_TOKEN}`;
+  }
+  const res = await fetch(url, { headers });
   if (!res.ok) throw new Error(`Failed: ${url}`);
   return res.json();
 }

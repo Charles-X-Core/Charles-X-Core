@@ -32,9 +32,9 @@
 └─$ core-intel --status --telemetry
 [⚡] NODE STATUS      : OPERATIONAL | Lima, PE (America/Lima)
 [🧠] RESEARCH FOCUS   : AI Agent Architectures, Network Automation & Distributed SaaS
-[🛡️] CYBER INTEL      : "Sanitize SVG uploads and disallow embedded foreignObject/script tags to prevent persistent XSS execution."
+[🛡️] CYBER INTEL      : "Implement strict CSP headers (default-src 'none') to neutralize DOM-based and stored XSS vectors."
 [🚀] ACTIVE STACK     : Java 21 / Spring Boot 3.2 • Next.js 14 / TypeScript • Python
-[🔄] LAST TELEMETRY   : 2026-11-16 21:45 UTC
+[🔄] LAST TELEMETRY   : 2026-11-17 01:40 UTC
 ```
 
 <br/>

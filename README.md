@@ -32,9 +32,9 @@
 └─$ core-intel --status --telemetry
 [⚡] NODE STATUS      : OPERATIONAL | Lima, PE (America/Lima)
 [🧠] RESEARCH FOCUS   : AI Agent Architectures, Network Automation & Distributed SaaS
-[🛡️] CYBER INTEL      : "Leverage eBPF kernel probes for real-time socket observability without intrusive binary instrumentation."
+[🛡️] CYBER INTEL      : "Enforce ephemeral tokens and strict rotation for CI/CD runners to prevent secret exfiltration."
 [🚀] ACTIVE STACK     : Java 21 / Spring Boot 3.2 • Next.js 14 / TypeScript • Python
-[🔄] LAST TELEMETRY   : 2026-11-20 19:41 UTC
+[🔄] LAST TELEMETRY   : 2026-11-21 05:56 UTC
 ```
 
 <br/>
